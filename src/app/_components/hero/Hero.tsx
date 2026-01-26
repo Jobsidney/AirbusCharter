@@ -21,13 +21,13 @@ export default function Hero() {
                 />
               </svg>
               <span className={styles.tagBadgeText}>
-                FLY BEYOND LUXURY
+              Ultra‑Long‑Range • Widebody Comfort • Bespoke Luxury
               </span>
             </div>
 
             <h1 className={styles.h1}>
-              <span className={styles.h1Block}>EXPERIENCE PRIVATE TRAVEL</span>
-              <span className={styles.h1Block}>WITHOUT ANY LIMITS</span>
+              <span className={styles.h1Block}>Airbus Corporate </span>
+              <span className={styles.h1Block}>Jet Charter</span>
             </h1>
 
             <div className="buttonsDescriptionGridPt2">
@@ -41,9 +41,8 @@ export default function Hero() {
               </div>
 
               <p className="subtitleSmall14TextLeftMt0">
-                Step into a world where privacy meets prestige. Airbus redefines
-                private aviation with dark elegance, bespoke services, and
-                unrivaled comfort designed for your journey.
+              Experience private aviation at its most refined. Airbus Corporate Jets redefine what it means to fly privately; expansive wide‑body cabins,
+               intercontinental range, and interiors designed more like private residences than aircraft. AirbusCorporateJet.com provides global charter access to the world’s most exclusive ACJ fleet, tailored for heads of state, UHNW individuals, corporations, and private families.
               </p>
             </div>
           </div>

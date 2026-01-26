@@ -26,12 +26,12 @@ export default function AboutUs() {
             </div>
 
             <h2 className="h2Uppercase">
-              Crafting Exclusive Journeys With Dark Elegance
+            Independent Platform Dedicated Exclusively to Airbus Corporate Jet Charter
             </h2>
 
             <p className={styles.subtitleText}>
-              At Airbus, we believe travel should be as extraordinary as the destination itself. Our vision combines discretion, sophistication, and unmatched service to deliver an experience beyond luxury. Every detail, from fleet design to inflight indulgence, is tailored to those who demand the finest.
-            </p>
+            AirbusCorporateJet.com was created to serve a very specific segment of private aviation: clients whose missions demand the space, range, endurance, and discretion that only Airbus Corporate Jets (ACJs) can provide.
+We operate as an independent charter platform, focused exclusively on the ACJ family — from the ACJ TwoTwenty to the flagship ACJ350. Our role is not to promote aircraft manufacturers, nor to act as a generic charter marketplace, but to advise, structure, and execute complex private aviation missions using some of the world’s most capable aircraft. </p>
           </div>
 
           <div className="grid2ColGap6">
