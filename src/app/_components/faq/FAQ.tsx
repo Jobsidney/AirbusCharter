@@ -8,20 +8,24 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "HOW DO I BOOK A PRIVATE JET WITH AIRBUS?",
-      answer: "A adipiscing tortor cum in morbi orci mus. Integer vitae turpis habitant facilisis quam. Cras quam eget diam augue aenean rhoncus gravida lorem ultricies. Diam nibh feugiat molestie aliquet.",
+      question: "WHAT IS AN AIRBUS CORPORATE JET CHARTER?",
+      answer: "An Airbus Corporate Jet charter offers private access to aircraft typically reserved for state or ultra‑long‑range missions. These aircraft provide airline‑grade reliability combined with bespoke private interiors, making them ideal for long‑duration flights, large delegations, or travelers requiring space and privacy beyond traditional business jets.",
     },
     {
-      question: "WHAT IS INCLUDED IN THE MEMBERSHIP PLANS?",
-      answer: "Our membership plans include exclusive access to our fleet, priority booking, personalized concierge services, and special rates. Each tier offers different benefits tailored to your travel needs.",
+      question: "WHO CHARTERS ACJS?",
+      answer: "Royal families, UHNW individuals, corporate leadership teams, and entertainment, sports, and global events clients.",
     },
     {
-      question: "HOW FAR IN ADVANCE SHOULD I BOOK?",
-      answer: "We recommend booking at least 48 hours in advance for domestic flights and 72 hours for international flights. However, we can accommodate last-minute requests based on availability.",
+      question: "HOW THE CHARTER PROCESS WORKS",
+      answer: "Submit a charter request, aircraft and operator matching, route planning, permits, and clearances, interior configuration and catering selection, flight execution with dedicated trip support.",
     },
     {
-      question: "WHAT DESTINATIONS CAN I FLY TO?",
-      answer: "Airbus provides access to thousands of airports worldwide, including many private terminals. We can arrange flights to virtually any destination, subject to airspace regulations and airport availability.",
+      question: "PRICING OVERVIEW",
+      answer: "ACJ charter pricing varies based on aircraft type, flight duration, routing, airport access, and onboard services. Due to the bespoke nature of these aircraft, each quotation is prepared individually.",
+    },
+    {
+      question: "GLOBAL OPERATIONS ?",
+      answer: "Worldwide charter coverage, diplomatic and high‑profile mission experience, discreet handling and security‑focused coordination, flexible departure locations.",
     },
   ];
 
