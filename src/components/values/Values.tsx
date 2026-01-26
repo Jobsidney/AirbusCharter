@@ -7,7 +7,7 @@ export default function Values() {
       <div className="grid2ColItemsStartGap12">
         <div className={styles.valuesImageContainer}>
           <Image
-            src="/flight-attendant.jpg"
+            src="https://jetora.tokotema.xyz/wp-content/uploads/2025/09/image-35.jpg"
             alt="Flight Attendant in Private Jet Cabin"
             width={540}
             height={720}
@@ -47,19 +47,20 @@ export default function Values() {
           <div className="flexColGap6">
             <div className={styles.valueItem}>
               <div className={styles.valueItemContent}>
-                <svg
-                  className={styles.checkmarkIcon}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+                <div className="checkmarkIcon">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
                 <div>
                   <h3 className={styles.valueTitle}>EXCLUSIVITY</h3>
                   <p className={styles.valueDescription}>
@@ -73,19 +74,20 @@ export default function Values() {
 
             <div className={styles.valueItem}>
               <div className={styles.valueItemContent}>
-                <svg
-                  className={styles.checkmarkIcon}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+                <div className="checkmarkIcon">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
                 <div>
                   <h3 className={styles.valueTitle}>INNOVATION</h3>
                   <p className={styles.valueDescription}>
@@ -99,19 +101,20 @@ export default function Values() {
 
             <div className={styles.valueItem}>
               <div className={styles.valueItemContent}>
-                <svg
-                  className={styles.checkmarkIcon}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+                <div className="checkmarkIcon">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
                 <div>
                   <h3 className={styles.valueTitle}>SAFETY</h3>
                   <p className={styles.valueDescription}>
