@@ -1,10 +1,11 @@
+import Link from "next/link";
 import styles from "../../app/page.module.css";
 
 export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.logoContainer}>
+        <Link href="/" className={styles.logoContainer}>
           <div className={styles.logoIcon}>
             <svg
               className={styles.logoIconSvg}
@@ -21,58 +22,28 @@ export default function Navbar() {
             </svg>
           </div>
           <span className={styles.logoText}>Airbus</span>
-        </div>
+        </Link>
 
         <nav className={styles.nav}>
-          <a href="#" className={styles.navLink}>
-            HOME
-          </a>
-          <a href="#" className={styles.navLink}>
-            ABOUT US
-          </a>
-          <div className="relative group">
-            <a href="#" className="navLinkWithDropdown">
-              FLEET
-              <svg
-                className={styles.navDropdownIcon}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </a>
-          </div>
-          <div className="relative group">
-            <a href="#" className="navLinkWithDropdown">
-              PAGES
-              <svg
-                className={styles.navDropdownIcon}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </a>
-          </div>
-          <a href="#" className={styles.navLink}>
-            CONTACT US
-          </a>
+          <Link href="/" className={styles.navLink}>
+            Home
+          </Link>
+          <Link href="#" className={styles.navLink}>
+            Charter Guide
+          </Link>
+          <Link href="/fleet" className={styles.navLink}>
+            Fleet
+          </Link>
+          <Link href="/contact-us" className={styles.navLink}>
+            FAQ
+          </Link>
+          <Link href="/contact-us" className={styles.navLink}>
+            Contact
+          </Link>
         </nav>
 
         <button className={styles.viewMembershipBtn}>
-          VIEW MEMBERSHIP
+          Request a Charter
         </button>
 
         <button className={styles.mobileMenuBtn}>
