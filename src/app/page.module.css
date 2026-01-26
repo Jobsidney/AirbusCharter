@@ -1428,13 +1428,6 @@
   gap: 1rem;
 }
 
-.checkmarkIcon {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #b36621;
-  flex-shrink: 0;
-  margin-top: 0.25rem;
-}
 
 .valueTitle {
   color: white;
@@ -1508,6 +1501,33 @@
   font-size: 1rem;
   font-weight: 600;
   font-family: var(--font-inter-tight), sans-serif;
+}
+
+/* ============================================
+   FEATURE LIST WITH CHECKMARKS
+   ============================================ */
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.featureListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  font-family: var(--font-inter-tight), sans-serif;
+}
+
+.featureListItem span {
+  flex: 1;
 }
 
 
