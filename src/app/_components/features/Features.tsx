@@ -77,16 +77,16 @@ export default function Features() {
                 />
               </svg>
               <span className={styles.tagBadgeText}>
-                Why Fly With Airbus
+              WHY AIRBUS CORPORATE JETS
               </span>
             </div>
 
             <h2 className="h2Uppercase">
-              Redefining Luxury Aviation With Dark Elegance
+            Designed Without Compromise
             </h2>
 
             <p className={styles.subtitleText}>
-              At Airbus, we blend discretion, prestige, and comfort into every journey. From world-class safety standards to bespoke experiences, our promise is to make private aviation seamless, secure, and unforgettable.
+            Unlike traditional business jets, ACJs are derived from Airbus’ most advanced commercial aircraft platforms. The result is unmatched cabin volume, ultra‑long‑range performance, and superior stability at altitude.
             </p>
           </div>
 
@@ -103,11 +103,82 @@ export default function Features() {
               </div>
               <div className={styles.featureContentWrapper}>
                 <h3 className="h3Mb2">
-                  Absolute Safety
+                  Superior Stablity at:
                 </h3>
                 <p className={styles.subtitleSmall14}>
                   Our fleet operates under the highest aviation standards, ensuring security and peace of mind on every journey.
                 </p>
+                <br />
+                <ul className={styles.featureList}>
+                  <li className={styles.featureListItem}>
+                    <div className="checkmarkIcon">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span>Full‑height cabins with wide‑body proportions</span>
+                  </li>
+                  <li className={styles.featureListItem}>
+                    <div className="checkmarkIcon">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span>Dedicated private suites, bedrooms, lounges, and dining areas</span>
+                  </li>
+                  <li className={styles.featureListItem}>
+                    <div className="checkmarkIcon">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span>Intercontinental and ultra‑long‑range capability</span>
+                  </li>
+                  <li className={styles.featureListItem}>
+                    <div className="checkmarkIcon">
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span>Quiet, smooth flight experience</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -123,11 +194,11 @@ export default function Features() {
               </div>
               <div className={styles.featureContentWrapper}>
                 <h3 className="h3Mb2">
-                  On-Time Flights
+                OUR CHARTER PHILOSOPHY
                 </h3>
                 <p className={styles.subtitleSmall14}>
-                  With precision scheduling and priority access, Airbus guarantees punctual departures and arrivals for all routes.
-                </p>
+                Every charter is curated individually. From aircraft selection and routing to cabin configuration and onboard services, each detail is aligned with your mission — whether it’s a transcontinental executive movement or a multi‑week private family journey.
+                 <i>" Precision. Privacy. Personalization."</i></p>
               </div>
             </div>
           </div>
