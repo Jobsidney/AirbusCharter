@@ -16,8 +16,6 @@ export default function Home() {
         <Features />
         <Fleet />
         <CTA />
-
-
       <Footer />
     </div>
   );
