@@ -1,4 +1,3 @@
-import styles from "../../page.module.css";
 import FleetCard from "./FleetCard";
 
 const fleetData = [
@@ -42,13 +41,13 @@ const fleetData = [
 
 export default function Fleet() {
   return (
-    <section className="fleetSection section-padding">
-      <div className={styles.fleetHeader}>
-        <div className={styles.fleetHeaderTop}>
-          <div className={styles.fleetHeaderContent}>
+    <section className="aboutUsSection section-padding">
+      <div className="fleetHeaderSection">
+        <div className="fleetHeaderTopSection">
+          <div className="fleetHeaderContentSection">
             <div className="tagBadgeMb0">
               <svg
-                className={styles.diamondIcon}
+                className="diamondIcon"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -59,7 +58,7 @@ export default function Fleet() {
                   d="M12 2 L20 10 L12 18 L4 10 Z"
                 />
               </svg>
-              <span className={styles.tagBadgeText}>
+              <span className="tagBadgeText">
                 Discover Our Fleet
               </span>
             </div>
@@ -67,15 +66,15 @@ export default function Fleet() {
               Luxury Jets Designed For Elite Travel
             </h2>
           </div>
-          <div className={styles.fleetHeaderButton}>
-            <button className={styles.buttonPrimary}>
+          <div className="fleetHeaderButtonSection">
+            <button className="buttonPrimary">
               EXPLORE THE FLEET
             </button>
           </div>
         </div>
       </div>
 
-      <div className={styles.fleetGrid}>
+      <div className="fleetGridSection">
         {fleetData.map((aircraft) => (
           <FleetCard
             key={aircraft.slug}

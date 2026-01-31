@@ -1,13 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "../../app/page.module.css";
 
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -26,12 +35,12 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.headerContent}>
-          <Link href="/" className={styles.logoContainer}>
-            <div className={styles.logoIcon}>
+      <header className={`navbarHeader ${isScrolled ? "navbarHeaderScrolled" : "navbarHeaderTransparent"}`}>
+        <div className="navbarHeaderContent">
+          <Link href="/" className="navbarLogoContainer">
+            <div className="navbarLogoIcon">
               <svg
-                className={styles.logoIconSvg}
+                className="navbarLogoIconSvg"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -44,34 +53,34 @@ export default function Navbar() {
                 />
               </svg>
             </div>
-            <span className={styles.logoText}>Airbus</span>
+            <span className="navbarLogoText">Airbus</span>
           </Link>
 
-          <nav className={styles.nav}>
-            <Link href="/" className={styles.navLink}>
+          <nav className="navbarNav">
+            <Link href="/" className="navbarNavLink">
               Home
             </Link>
-            <Link href="#" className={styles.navLink}>
+            <Link href="#" className="navbarNavLink">
               Charter Guide
             </Link>
-            <Link href="/fleet" className={styles.navLink}>
+            <Link href="/fleet" className="navbarNavLink">
               Fleet
             </Link>
-            <Link href="/contact-us" className={styles.navLink}>
+            <Link href="/contact-us" className="navbarNavLink">
               FAQ
             </Link>
-            <Link href="/contact-us" className={styles.navLink}>
+            <Link href="/contact-us" className="navbarNavLink">
               Contact
             </Link>
           </nav>
 
-          <button className={styles.viewMembershipBtn}>
+          <button className="navbarViewMembershipBtn">
             Request a Charter
           </button>
 
-          <button className={styles.mobileMenuBtn} onClick={toggleDrawer}>
+          <button className="navbarMobileMenuBtn" onClick={toggleDrawer}>
             <svg
-              className={styles.mobileMenuIcon}
+              className="navbarMobileMenuIcon"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -88,16 +97,14 @@ export default function Navbar() {
       </header>
 
       {/* Mobile Drawer */}
-      <div
-        className={`${styles.mobileDrawer} ${isDrawerOpen ? styles.mobileDrawerOpen : ""}`}
-      >
-        <div className={styles.mobileDrawerOverlay} onClick={closeDrawer}></div>
-        <div className={styles.mobileDrawerContent}>
-          <div className={styles.mobileDrawerHeader}>
-            <Link href="/" className={styles.mobileDrawerLogo} onClick={closeDrawer}>
-              <div className={styles.logoIcon}>
+      <div className={isDrawerOpen ? "mobileDrawer mobileDrawerOpenState" : "mobileDrawer"}>
+        <div className="mobileDrawerOverlay" onClick={closeDrawer}></div>
+        <div className="mobileDrawerContent">
+          <div className="mobileDrawerHeader">
+            <Link href="/" className="mobileDrawerLogo" onClick={closeDrawer}>
+              <div className="logoIcon">
                 <svg
-                  className={styles.logoIconSvg}
+                  className="logoIconSvg"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -110,14 +117,14 @@ export default function Navbar() {
                   />
                 </svg>
               </div>
-              <span className={styles.logoText}>Airbus</span>
+              <span className="logoText">Airbus</span>
             </Link>
-            <button className={styles.mobileDrawerClose} onClick={closeDrawer}>
+            <button className="mobileDrawerClose" onClick={closeDrawer}>
               <svg
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                className={styles.mobileDrawerCloseIcon}
+                className="mobileDrawerCloseIcon"
               >
                 <path
                   strokeLinecap="round"
@@ -129,20 +136,20 @@ export default function Navbar() {
             </button>
           </div>
 
-          <nav className={styles.mobileDrawerNav}>
+          <nav className="mobileDrawerNav">
             {menuItems.map((item, index) => {
               const isActive = pathname === item.href;
               return (
                 <div key={index}>
                   <Link
                     href={item.href}
-                    className={`${styles.mobileDrawerLink} ${isActive ? styles.mobileDrawerLinkActive : ""}`}
+                    className={isActive ? "mobileDrawerLink mobileDrawerLinkActive" : "mobileDrawerLink"}
                     onClick={closeDrawer}
                   >
                     <span>{item.label}</span>
                     {item.hasSubmenu && (
                       <svg
-                        className={styles.mobileDrawerChevron}
+                        className="mobileDrawerChevron"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -157,7 +164,7 @@ export default function Navbar() {
                     )}
                   </Link>
                   {index < menuItems.length - 1 && (
-                    <div className={styles.mobileDrawerDivider}></div>
+                    <div className="mobileDrawerDivider"></div>
                   )}
                 </div>
               );

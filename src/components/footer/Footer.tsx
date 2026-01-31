@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="aboutUsSection section-padding footer">
       <div className="footerContent">
         <div className="footerLogoSection">
           <div className="footerLogo">

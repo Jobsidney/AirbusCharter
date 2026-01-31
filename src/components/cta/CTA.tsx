@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="ctaSection section-padding bg-gradient">
+    <section className="ctaSection aboutUsSection section-padding bg-gradient">
       <div className="ctaContent">
         <h2 className="ctaHeading">STAY IN TOUCH</h2>
         <p className="ctaDescription">

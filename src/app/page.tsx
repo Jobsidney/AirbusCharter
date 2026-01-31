@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Navbar from "../components/navbar/Navbar";
 import Hero from "./_components/hero/Hero";
 import Features from "./_components/features/Features";
@@ -16,6 +15,8 @@ export default function Home() {
         <Features />
         <Fleet />
         <CTA />
+
+
       <Footer />
     </div>
   );

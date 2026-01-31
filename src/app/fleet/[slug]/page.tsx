@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import styles from "../../page.module.css";
 import Navbar from "../../../components/navbar/Navbar";
 import FleetDetailHero from "../../_components/fleet-detail-hero/FleetDetailHero";
 import FleetDetailContent from "../../_components/fleet-detail-content/FleetDetailContent";

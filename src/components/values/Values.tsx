@@ -1,11 +1,10 @@
 import Image from "next/image";
-import styles from "../../app/page.module.css";
 
 export default function Values() {
   return (
     <section className="valuesSection section-padding">
       <div className="grid2ColItemsStartGap12">
-        <div className={styles.valuesImageContainer}>
+        <div className="valuesImageContainerSection">
           <Image
             src="https://jetora.tokotema.xyz/wp-content/uploads/2025/09/image-35.jpg"
             alt="Flight Attendant in Private Jet Cabin"
@@ -16,10 +15,10 @@ export default function Values() {
         </div>
 
         <div className="flexColGap8">
-          <div className={styles.spaceY6}>
+          <div className="flexColGap6">
             <div className="tagBadgeMb6">
               <svg
-                className={styles.diamondIcon}
+                className="diamondIcon"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -30,7 +29,7 @@ export default function Values() {
                   d="M12 2 L20 10 L12 18 L4 10 Z"
                 />
               </svg>
-              <span className={styles.tagBadgeText}>
+              <span className="tagBadgeText">
                 OUR VALUES
               </span>
             </div>
@@ -39,14 +38,14 @@ export default function Values() {
               Guiding Principles For Timeless Private Aviation
             </h2>
 
-            <p className={styles.subtitleText}>
+            <p className="subtitleText">
               At Airbus, our values shape every flight and every detail of service. They define who we are, what we stand for, and how we elevate your journey.
             </p>
           </div>
 
           <div className="flexColGap6">
-            <div className={styles.valueItem}>
-              <div className={styles.valueItemContent}>
+            <div className="valueItemSection">
+              <div className="valueItemContentSection">
                 <div className="checkmarkIcon">
                   <svg
                     fill="none"
@@ -62,18 +61,18 @@ export default function Values() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className={styles.valueTitle}>EXCLUSIVITY</h3>
-                  <p className={styles.valueDescription}>
+                  <h3 className="valueTitleSection">EXCLUSIVITY</h3>
+                  <p className="valueDescriptionSection">
                     Delivering private experiences reserved for the elite.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className={styles.valueDivider}></div>
+            <div className="valueDividerSection"></div>
 
-            <div className={styles.valueItem}>
-              <div className={styles.valueItemContent}>
+            <div className="valueItemSection">
+              <div className="valueItemContentSection">
                 <div className="checkmarkIcon">
                   <svg
                     fill="none"
@@ -89,18 +88,18 @@ export default function Values() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className={styles.valueTitle}>INNOVATION</h3>
-                  <p className={styles.valueDescription}>
+                  <h3 className="valueTitleSection">INNOVATION</h3>
+                  <p className="valueDescriptionSection">
                     Embracing technology to refine luxury aviation.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className={styles.valueDivider}></div>
+            <div className="valueDividerSection"></div>
 
-            <div className={styles.valueItem}>
-              <div className={styles.valueItemContent}>
+            <div className="valueItemSection">
+              <div className="valueItemContentSection">
                 <div className="checkmarkIcon">
                   <svg
                     fill="none"
@@ -116,8 +115,8 @@ export default function Values() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className={styles.valueTitle}>SAFETY</h3>
-                  <p className={styles.valueDescription}>
+                  <h3 className="valueTitleSection">SAFETY</h3>
+                  <p className="valueDescriptionSection">
                     Ensuring uncompromised standards in every journey.
                   </p>
                 </div>
@@ -125,7 +124,7 @@ export default function Values() {
             </div>
           </div>
 
-          <button className={styles.buttonPrimary}>
+          <button className="buttonPrimary">
             EXPLORE MORE
           </button>
         </div>

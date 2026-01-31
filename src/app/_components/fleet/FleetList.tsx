@@ -1,4 +1,3 @@
-import styles from "../../page.module.css";
 import FleetCard from "./FleetCard";
 
 const fleetData = [
@@ -43,7 +42,7 @@ const fleetData = [
 export default function FleetList() {
   return (
     <section className="fleetSection section-padding">
-      <div className={styles.fleetGrid}>
+      <div className="fleetGridSection">
         {fleetData.map((aircraft) => (
           <FleetCard
             key={aircraft.slug}

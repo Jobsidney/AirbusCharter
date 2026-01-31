@@ -1,12 +1,11 @@
 import Image from "next/image";
-import styles from "../../page.module.css";
 
 export default function Features() {
   return (
-    <section className="featuresSection section-padding bg-gradient">
+    <section className="aboutUsSection section-padding bg-gradient">
       <div className="grid2ColItemsStartGap12">
         <div className="flexColGap6">
-          <div className={styles.image360}>
+          <div className="image360">
             <Image
               src="/jet-hangar.jpg"
               alt="Private Jet in Hangar"
@@ -17,44 +16,44 @@ export default function Features() {
           </div>
           
           <div className="flexColGap4">
-            <div className={styles.progressItemWrapper}>
-              <div className={styles.progressHeaderRow}>
-                <span className={styles.progressLabelText}>
+            <div className="progressItemWrapper">
+              <div className="progressHeaderRow">
+                <span className="progressLabelText">
                   Client Satisfaction
                 </span>
-                <span className={styles.progressValueText}>
+                <span className="progressValueText">
                   98%
                 </span>
               </div>
-              <div className={styles.progressBarBg}>
+              <div className="progressBarBg">
                 <div className="progressBarFill98"></div>
               </div>
             </div>
 
-            <div className={styles.progressItemWrapper}>
-              <div className={styles.progressHeaderRow}>
-                <span className={styles.progressLabelText}>
+            <div className="progressItemWrapper">
+              <div className="progressHeaderRow">
+                <span className="progressLabelText">
                   Safety Excellence
                 </span>
-                <span className={styles.progressValueText}>
+                <span className="progressValueText">
                   100%
                 </span>
               </div>
-              <div className={styles.progressBarBg}>
+              <div className="progressBarBg">
                 <div className="progressBarFill100"></div>
               </div>
             </div>
 
-            <div className={styles.progressItemWrapper}>
-              <div className={styles.progressHeaderRow}>
-                <span className={styles.progressLabelText}>
+            <div className="progressItemWrapper">
+              <div className="progressHeaderRow">
+                <span className="progressLabelText">
                   Personalized Service
                 </span>
-                <span className={styles.progressValueText}>
+                <span className="progressValueText">
                   92%
                 </span>
               </div>
-              <div className={styles.progressBarBg}>
+              <div className="progressBarBg">
                 <div className="progressBarFill92"></div>
               </div>
             </div>
@@ -62,10 +61,10 @@ export default function Features() {
         </div>
 
         <div className="flexColGap8">
-          <div className={styles.spaceY6}>
+          <div className="flexColGap6">
             <div className="tagBadgeMb6">
               <svg
-                className={styles.diamondIcon}
+                className="diamondIcon"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -76,7 +75,7 @@ export default function Features() {
                   d="M12 2 L20 10 L12 18 L4 10 Z"
                 />
               </svg>
-              <span className={styles.tagBadgeText}>
+              <span className="tagBadgeText">
               WHY AIRBUS CORPORATE JETS
               </span>
             </div>
@@ -85,32 +84,32 @@ export default function Features() {
             Designed Without Compromise
             </h2>
 
-            <p className={styles.subtitleText}>
-            Unlike traditional business jets, ACJs are derived from Airbus’ most advanced commercial aircraft platforms. The result is unmatched cabin volume, ultra‑long‑range performance, and superior stability at altitude.
+            <p className="subtitleText">
+            Unlike traditional business jets, ACJs are derived from Airbus' most advanced commercial aircraft platforms. The result is unmatched cabin volume, ultra‑long‑range performance, and superior stability at altitude.
             </p>
           </div>
 
           <div className="flexColGap6">
-            <div className={styles.featureBoxHorizontalWrapper}>
-              <div className={styles.featureIconCircle}>
+            <div className="featureBoxHorizontalWrapper">
+              <div className="featureIconCircle">
                 <svg
-                  className={styles.featureIconSvgAccent}
+                  className="featureIconSvgAccent"
                   fill="currentColor"
                   viewBox="0 0 512 512"
                 >
                   <path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path>
                 </svg>
               </div>
-              <div className={styles.featureContentWrapper}>
+              <div className="featureContentWrapper">
                 <h3 className="h3Mb2">
                   Superior Stablity at:
                 </h3>
-                <p className={styles.subtitleSmall14}>
+                <p className="subtitleSmall14">
                   Our fleet operates under the highest aviation standards, ensuring security and peace of mind on every journey.
                 </p>
                 <br />
-                <ul className={styles.featureList}>
-                  <li className={styles.featureListItem}>
+                <ul className="featureListSection">
+                  <li className="featureListItemSection">
                     <div className="checkmarkIcon">
                       <svg
                         fill="none"
@@ -127,7 +126,7 @@ export default function Features() {
                     </div>
                     <span>Full‑height cabins with wide‑body proportions</span>
                   </li>
-                  <li className={styles.featureListItem}>
+                  <li className="featureListItemSection">
                     <div className="checkmarkIcon">
                       <svg
                         fill="none"
@@ -144,7 +143,7 @@ export default function Features() {
                     </div>
                     <span>Dedicated private suites, bedrooms, lounges, and dining areas</span>
                   </li>
-                  <li className={styles.featureListItem}>
+                  <li className="featureListItemSection">
                     <div className="checkmarkIcon">
                       <svg
                         fill="none"
@@ -161,7 +160,7 @@ export default function Features() {
                     </div>
                     <span>Intercontinental and ultra‑long‑range capability</span>
                   </li>
-                  <li className={styles.featureListItem}>
+                  <li className="featureListItemSection">
                     <div className="checkmarkIcon">
                       <svg
                         fill="none"
@@ -182,22 +181,22 @@ export default function Features() {
               </div>
             </div>
 
-            <div className={styles.featureBoxHorizontalWrapper}>
-              <div className={styles.featureIconCircle}>
+            <div className="featureBoxHorizontalWrapper">
+              <div className="featureIconCircle">
                 <svg
-                  className={styles.featureIconSvgAccent}
+                  className="featureIconSvgAccent"
                   fill="currentColor"
                   viewBox="0 0 512 512"
                 >
                   <path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path>
                 </svg>
               </div>
-              <div className={styles.featureContentWrapper}>
+              <div className="featureContentWrapper">
                 <h3 className="h3Mb2">
                 OUR CHARTER PHILOSOPHY
                 </h3>
-                <p className={styles.subtitleSmall14}>
-                Every charter is curated individually. From aircraft selection and routing to cabin configuration and onboard services, each detail is aligned with your mission — whether it’s a transcontinental executive movement or a multi‑week private family journey.
+                <p className="subtitleSmall14">
+                Every charter is curated individually. From aircraft selection and routing to cabin configuration and onboard services, each detail is aligned with your mission — whether it's a transcontinental executive movement or a multi‑week private family journey.
                  <i>" Precision. Privacy. Personalization."</i></p>
               </div>
             </div>
