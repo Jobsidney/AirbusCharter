@@ -142,7 +142,7 @@ export function TechnicalEngineeringSection() {
           <div className="space-y-6">
             <div className="shadow-xl">
               <Image
-                src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
                 alt="ACJ Operating Costs"
                 width={600}
                 height={400}
@@ -365,7 +365,7 @@ export function TechnicalEngineeringSection() {
           <div className="w-1/2">
             <div className="shadow-xl">
               <Image
-                src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
                 alt="ACJ Operating Costs"
                 width={600}
                 height={400}

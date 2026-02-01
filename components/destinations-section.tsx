@@ -19,16 +19,15 @@ export function DestinationsSection() {
             Global Capability
           </span>
           <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
-            <span className="text-[#F5F5F5]">Global Reach. </span>
-            <span className="text-[#C9A24D] italic">Destinations Worldwide</span>
+            <span className="text-[#F5F5F5]">OUR CHARTER  </span>
+            <span className="text-[#C9A24D] italic">PHILOSOPHY</span>
           </h2>
           <p className="text-2xl sm:text-3xl md:text-4xl font-libre-baskerville font-light text-white/70 mt-2 mb-6">
-            Mission-Driven Capability
+          Precision. Privacy. Personalization.
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
           <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed font-libre-baskerville">
-          Airbus Corporate Jets are engineered for intercontinental and ultra-long-range missions, enabling nonstop connectivity between major global hubs and remote destinations alike. ACJ aircraft are selected for diplomatic, corporate, and private operations where range, reliability, and payload flexibility are critical.
-          </p>
+          Every charter is curated individually. From aircraft selection and routing to cabin configuration and onboard services, each detail is aligned with your mission — whether it’s a transcontinental executive movement or a multi‑week private family journey.</p>
         </div>
 
         <button className="inline-flex items-center justify-center px-8 py-3.5 border border-[#C9A24D] bg-transparent text-[#C9A24D] text-sm font-semibold tracking-wider uppercase hover:bg-[#C9A24D] hover:text-[#0E1116] transition-all duration-300">

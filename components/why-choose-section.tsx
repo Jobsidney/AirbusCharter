@@ -1,16 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Plane, Globe, Briefcase, Users, Building2, Wrench, UserCheck } from "lucide-react";
-import { AboutUsSection } from "./about-us-section";
+import { Layout, BedDouble, Globe, Wind } from "lucide-react";
 
 export function WhyChooseSection() {
   const audiences = [
-    { icon: Users, text: "Aviation professionals" },
-    { icon: Plane, text: "Charter clients" },
-    { icon: Building2, text: "Operators & management companies" },
-    { icon: Wrench, text: "Technical teams" },
-    { icon: UserCheck, text: "Aircraft owners & advisors" },
+    { icon: Layout, text: "Full‑height cabins with wide‑body proportions" },
+    { icon: BedDouble, text: "Dedicated private suites, bedrooms, lounges, and dining areas" },
+    { icon: Globe, text: "Intercontinental and ultra‑long‑range capability" },
+    { icon: Wind, text: "Quiet, smooth flight experience" },
   ];
   return (
     <>
@@ -24,11 +22,11 @@ export function WhyChooseSection() {
             Independent Resource
           </span>
           <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
-            <span className="text-[#F5F5F5]">About </span>
-            <span className="text-[#C9A24D] italic">AirbusCharterJet.com</span>
+            <span className="text-[#F5F5F5]">WHY AIRBUS </span>
+            <span className="text-[#C9A24D] italic">CORPORATE JETS</span>
           </h2>
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-libre-baskerville font-light text-white/70 mt-2">
-            Our Purpose
+          <p className="text-xl sm:text-2xl md:text-3xl  font-libre-baskerville font-light text-white/70 mt-2">
+          Designed Without Compromise
           </p>
           <div className="gold-accent-line w-32 mx-auto mt-8"></div>
         </div>
@@ -40,8 +38,8 @@ export function WhyChooseSection() {
         {/* Content */}
         <div className="space-y-12">
           <p className="text-white/80 text-lg md:text-xl leading-relaxed text-center font-light font-libre-baskerville">
-            AirbusCharterJet.com was created to serve as the world&apos;s most comprehensive 
-            independent reference for ACJ aircraft. Our mission is to support:
+          Unlike traditional business jets, ACJs are derived from Airbus’ most advanced commercial aircraft platforms. The result is unmatched cabin volume, ultra‑long‑range performance, and superior stability at altitude.
+
           </p>
 
           {/* Audience List */}
@@ -64,14 +62,14 @@ export function WhyChooseSection() {
           <div className="my-16 pt-8 border-t border-[#C9A24D]/10">
             <p className="text-center text-xs text-white/50 leading-relaxed max-w-2xl mx-auto font-light font-libre-baskerville">
               <strong className="font-normal">Disclaimer:</strong> AirbusCharterJet.com is an independent informational resource and is not affiliated with, 
-              endorsed by, or sponsored by The Boeing Company or Airbus Corporate Jets. For official information, visit{" "}
+              endorsed by, or sponsored by the Airbus Corporate Jets. For official information, visit{" "}
               <a 
-                href="https://businessjets.boeing.com" 
+                href="https://airbus.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[#C9A24D] hover:underline"
               >
-                businessjets.boeing.com
+                airbus.com
               </a>
               . All trademarks remain the property of their respective owners.
             </p>

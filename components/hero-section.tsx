@@ -24,18 +24,16 @@ export function HeroSection() {
                 color: "transparent",
               }}
             >
-              Airbus Charter Jets
+              Airbus Jet Charter
             </h1>
 
-            <p className="text-[#C9A24D] text-base md:text-md lg:text-lg tracking-[0.35em] uppercase text-center mb-12 font-light">
+            {/* <p className="text-[#C9A24D] text-base md:text-md lg:text-lg tracking-[0.35em] uppercase text-center mb-12 font-light">
               Charter Without Compromise
-            </p>
+            </p> */}
 
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-10" />
             <p className="text-[#F5F5F5]/90 text-base sm:text-md md:text-lg leading-relaxed font-light tracking-wide max-w-2xl mx-auto">
-              For clients who require nonstop intercontinental capability, cabin scale, and discretion, Airbus Charter Jets remain the preferred platform for ultra-long-range charter missions.
-            </p>
-          </div>
+            Experience the pinnacle of private aviation with Airbus Corporate Jets, where world-class luxury meets intercontinental range in a fleet tailored for the world’s most discerning travelers. Combining the comfort of a private residence with global charter access, it is the premier choice for heads of state and elite organizations seeking a refined, bespoke travel experience. </p></div>
         </div>
 
         <div className="relative z-10 flex justify-center pb-10">

@@ -58,23 +58,23 @@ export function Header() {
                 <span className="dropdown-toggle">ACJ MODELS</span>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link href="/aircraft/bbj-737" onClick={closeMenu}>
-                      ACJ 737
+                    <Link href="/aircraft/acj-twenty-twenty" onClick={closeMenu}>
+                      ACJ TwoTwenty
                     </Link>
                   </li>
                   <li>
-                    <Link href="/aircraft/bbj-747" onClick={closeMenu}>
-                      ACJ 747
+                    <Link href="/aircraft/acj-neo" onClick={closeMenu}>
+                      ACJ neo
                     </Link>
                   </li>
                   <li>
-                    <Link href="/aircraft/bbj-777" onClick={closeMenu}>
-                      ACJ 777
+                    <Link href="/aircraft/acj330-neo" onClick={closeMenu}>
+                      ACJ330 neo
                     </Link>
                   </li>
                   <li>
-                    <Link href="/aircraft/bbj-787" onClick={closeMenu}>
-                      ACJ 787
+                    <Link href="/aircraft/acj350" onClick={closeMenu}>
+                      ACJ350
                     </Link>
                   </li>
                 </ul>
@@ -143,10 +143,10 @@ export function Header() {
               <li className="drawer-menu-item drawer-menu-group">
                 <span className="drawer-menu-label">ACJ Models</span>
                 <ul className="drawer-menu-sublist">
-                  <li><Link href="/aircraft/bbj-737" onClick={closeMenu}>ACJ 737</Link></li>
-                  <li><Link href="/aircraft/bbj-747" onClick={closeMenu}>ACJ 747</Link></li>
-                  <li><Link href="/aircraft/bbj-777" onClick={closeMenu}>ACJ 777</Link></li>
-                  <li><Link href="/aircraft/bbj-787" onClick={closeMenu}>ACJ 787</Link></li>
+                  <li><Link href="/aircraft/acj-twenty-twenty" onClick={closeMenu}>ACJ TwoTwenty</Link></li>
+                  <li><Link href="/aircraft/acj-neo" onClick={closeMenu}>ACJ neo</Link></li>
+                  <li><Link href="/aircraft/acj330-neo" onClick={closeMenu}>ACJ330 neo</Link></li>
+                  <li><Link href="/aircraft/acj350" onClick={closeMenu}>ACJ350</Link></li>
                 </ul>
               </li>
               <li className="drawer-menu-item drawer-menu-group">

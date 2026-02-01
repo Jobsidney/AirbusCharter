@@ -1254,9 +1254,8 @@ export default function AboutPage() {
             </h6>
 
             <p className="about-description">
-              AirbusCharterJet.com was created as a comprehensive, independent resource dedicated to Airbus Corporate Jet (ACJ) aircraft. Our purpose is to provide aviation professionals, operators, analysts, charter clients, and enthusiasts with clear, structured, and accessible information about the full ACJ family—from the original 737-based ACJs to the widebody ACJ 777 and ACJ 787 platforms.
-              <br /><br />
-              We focus exclusively on delivering accurate, high-quality reference material including technical specifications, performance data, interior configurations, operating costs, charter insights, and industry analysis.
+            AirbusCorporateJet.com was created to serve a very specific segment of private aviation: clients whose missions demand the space, range, endurance, and discretion that only Airbus Corporate Jets (ACJs) can provide.<br /><br />
+            We operate as an independent charter platform, focused exclusively on the ACJ family — from the ACJ TwoTwenty to the flagship ACJ350. Our role is not to promote aircraft manufacturers, nor to act as a generic charter marketplace, but to advise, structure, and execute complex private aviation missions using some of the world’s most capable aircraft.
             </p>
           </div>
 
@@ -1270,43 +1269,19 @@ export default function AboutPage() {
           <ul className="about-features">
             <li className="about-feature">
               <span className="about-feature-icon">✓</span>
-              Detailed ACJ Aircraft Profiles
-              <br />
-              <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Full technical breakdowns of all ACJ models, including range, cabin dimensions, MTOW, engines, and mission capabilities.
-              </span>
+              Significantly larger cabin volume
             </li>
             <li className="about-feature">
               <span className="about-feature-icon">✓</span>
-              Cabin & Interior Concepts
-              <br />
-              <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Overviews of multi-zone VVIP layouts, floorplans, completion center capabilities, and luxury configuration options.
-              </span>
+              True intercontinental and ultra-long-range capability
             </li>
             <li className="about-feature">
               <span className="about-feature-icon">✓</span>
-              Operating Economics
-              <br />
-              <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Industry-informed cost analysis including hourly operating expenses, annual ownership estimates, maintenance considerations, and crew requirements.
-              </span>
+              Superior stability and comfort over extended durations
             </li>
             <li className="about-feature">
               <span className="about-feature-icon">✓</span>
-              Charter Guidance
-              <br />
-              <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Practical insights for travelers, corporations, and government delegations looking to understand how ACJs are used for ultra-long-range travel.
-              </span>
-            </li>
-            <li className="about-feature">
-              <span className="about-feature-icon">✓</span>
-              Insights & Industry Articles
-              <br />
-              <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                A growing collection of technical articles, comparisons, engineering explainers, and ACJ market commentary.
-              </span>
+              The ability to create residential-scale interiors
             </li>
           </ul>
         </div>
@@ -1405,8 +1380,7 @@ export default function AboutPage() {
                 <span className="text-[#C9A24D]">⚠</span> This is an independent informational resource and is not affiliated with Airbus Corporate Jets.
               </p>
               <p className="text-xs text-white/60 leading-relaxed mb-4">
-                <strong>Disclaimer:</strong> AirbusCharterJet.com is an independent informational resource and is not affiliated with, 
-                endorsed by, or sponsored by The Boeing Company or Airbus Corporate Jets.
+                <strong>Disclaimer:</strong> AirbusCorporateJet.com is an independent charter platform and is not affiliated with, endorsed by, or connected to Airbus S.A.S. or the official Airbus Corporate Jets brand (acj.airbus.com). All aircraft are operated by licensed third-party operators under valid Air Operator Certificates.
               </p>
               <p className="text-xs text-white/60 leading-relaxed mb-4">
                 All trademarks and product names are property of their respective owners.

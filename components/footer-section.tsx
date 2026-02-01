@@ -32,7 +32,7 @@ export function FooterSection() {
           
           {/* CTA Button */}
           <Link 
-            href="/aircraft/bbj-737"
+            href="/aircraft/acj-twenty-twenty"
             className="inline-flex items-center gap-2 px-8 py-3 text-[#C9A24D] text-sm font-semibold border border-[#C9A24D] bg-[#0E1116] transition-all duration-300 hover:-translate-y-1 hover:bg-[#C9A24D] hover:text-[#0E1116] hover:shadow-lg hover:shadow-[#C9A24D]/30"
           >
             View Available ACJ Aircraft
@@ -56,10 +56,10 @@ export function FooterSection() {
           <div>
             <h3 className="text-[#C9A24D] text-xs uppercase tracking-wider mb-4 font-semibold">ACJ Models</h3>
             <ul className="space-y-3">
-              <li><Link href="/aircraft/bbj-737-max" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 737 MAX</Link></li>
-              <li><Link href="/aircraft/bbj-787" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 787</Link></li>
-              <li><Link href="/aircraft/bbj-777x" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 777X</Link></li>
-              <li><Link href="/aircraft/bbj-747" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 747</Link></li>
+              <li><Link href="/aircraft/acj-twenty-twenty" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ TwoTwenty</Link></li>
+              <li><Link href="/aircraft/acj-neo" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ neo</Link></li>
+              <li><Link href="/aircraft/acj330-neo" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ330 neo</Link></li>
+              <li><Link href="/aircraft/acj350" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ350</Link></li>
             </ul>
           </div>
           

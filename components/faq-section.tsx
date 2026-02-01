@@ -5,32 +5,45 @@ import Image from "next/image";
 import { ChevronRight, Check } from "lucide-react";
 import { Briefcase } from "lucide-react";
 
+type FAQItem = {
+  question: string;
+  answer: string;
+  benefits?: string[];
+};
+
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
+  const faqs: FAQItem[] = [
     {
-      question: "What You'll Find on This Website",
+      question: "What is an Airbus Corporate Jet (ACJ)?",
+      answer: "An Airbus Corporate Jet is a private aircraft based on Airbus commercial platforms, converted for VIP and private use. ACJs offer significantly more cabin space, range, and customization than traditional business jets, making them suitable for long-haul, high-privacy missions."
+    },
+    {
+      question: "Is AirbusCorporateJet.com affiliated with Airbus?",
+      answer: "No. AirbusCorporateJet.com is an independent charter platform. We are not affiliated with, endorsed by, or connected to Airbus S.A.S. or the official Airbus Corporate Jets brand."
+    },
+    {
+      question: "Who operates the aircraft listed on this website?",
+      answer: "All flights are operated by licensed third-party operators holding valid Air Operator Certificates (AOCs), in full compliance with international aviation regulations."
+    },
+    {
+      question: "How long can an ACJ stay airborne?",
       answer: "",
       benefits: [
-        "Aircraft-specific technical specifications",
-        "ACJ range maps and mission profiles",
-        "Interior layouts and completion considerations",
-        "Operating cost and ownership insights",
-        "Charter planning guidance and use cases",
-        "Comparative analysis between ACJ models"
+        "ACJ TwoTwenty: long-range intercontinental capability",
+        "ACJ neo: extended intercontinental missions",
+        "ACJ330neo: up to 21 hours nonstop",
+        "ACJ350: up to 22 hours nonstop"
       ]
     },
-    
     {
-      question: "Who This Website Is For",
-     benefits: [
-      "Aircraft owners and advisors",
-      "Charter clients and flight departments",
-      "Aviation professionals and operators",
-      "Technical, engineering, and management teams",
-      "Media, analysts, and industry researchers"
-      ]
+      question: "How far in advance should I book an ACJ charter?",
+      answer: "Due to limited global availability, ACJ charters—especially wide-body aircraft—are best arranged well in advance, particularly for peak periods or diplomatic missions."
+    },
+    {
+      question: "How do I request an ACJ charter?",
+      answer: "You can submit a charter request through our website. A dedicated specialist will review your mission requirements and provide available aircraft options."
     }
   ];
 
@@ -47,18 +60,16 @@ export function FAQSection() {
           <div className="space-y-8">
             <div>
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
-                Your Guide
+                FAQS
               </span>
               <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
-                <span className="text-[#F5F5F5]">How to Use </span>
-                <span className="text-[#C9A24D] italic">This Resource</span>
+                <span className="text-[#F5F5F5]">General Charter  </span>
+                <span className="text-[#C9A24D] italic">Information</span>
               </h2>
               <p className="text-xl sm:text-2xl md:text-3xl font-libre-baskerville font-light text-white/70 mt-2 mb-6">
                 Navigate with Confidence
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mb-8"></div>
-              <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-xl font-libre-baskerville">
-              AirbusCharterJet.com is designed as a technical and educational reference for professionals and clients evaluating Airbus Corporate Jets. Content is structured to support research, comparison, and planning — not sales.</p>
             </div>
 
             <div className="space-y-0">
@@ -87,16 +98,7 @@ export function FAQSection() {
                     <div className="pb-6 pl-[72px] animate-in slide-in-from-top-2 duration-300">
                       {faq.answer && (
                         <div className="flex gap-4 mb-4">
-                          <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-                            <Image
-                              src="/iMAGES/BoeingMainFront.jpg"
-                              alt="Expert"
-                              width={80}
-                              height={80}
-                              className="w-full h-full object-cover"
-                              quality={100}
-                            />
-                          </div>
+                          
                           <p className="text-sm text-white/70 leading-relaxed flex-1 pt-2 font-libre-baskerville">
                             {faq.answer}
                           </p>

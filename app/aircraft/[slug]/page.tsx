@@ -124,17 +124,17 @@ const aircraftData: Record<string, {
       category: "narrowbody"
     },
     gallery: [
-      { image: "/iMAGES/ACJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
-      { image: "/iMAGES/ACJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
-      { image: "/iMAGES/ACJ-Select-737-7-AFT_lounge_C_serene.jpg", title: "Aft Lounge", size: "medium" },
-      { image: "/iMAGES/ACJ-Select-737-7-Private_Room_D_earthbound.jpg", title: "Private Room", size: "small" },
-      { image: "/iMAGES/ACJ-Select-737-7-Private_Office_earthbound.jpg", title: "Private Office", size: "large" },
-      { image: "/iMAGES/ACJ-Select-737-7-Ensuite_midnight.jpg", title: "Ensuite Bathroom", size: "small" },
+      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
+      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
+      { image: "/iMAGES/BBJ-Select-737-7-AFT_lounge_C_serene.jpg", title: "Aft Lounge", size: "medium" },
+      { image: "/iMAGES/BBJ-Select-737-7-Private_Room_D_earthbound.jpg", title: "Private Room", size: "small" },
+      { image: "/iMAGES/BBJ-Select-737-7-Private_Office_earthbound.jpg", title: "Private Office", size: "large" },
+      { image: "/iMAGES/BBJ-Select-737-7-Ensuite_midnight.jpg", title: "Ensuite Bathroom", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Entryway", size: "medium" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "large" },
-      { image: "/iMAGES/ACJ-Select-737-7-FWD_lounge_B_serene.jpg", title: "Forward Lounge B", size: "medium" },
-      { image: "/iMAGES/ACJ-Select-737-7-Stateroom_midnight.jpg", title: "Stateroom Midnight", size: "small" },
-      { image: "/iMAGES/ACJ-Select-737-7-AFT_lounge_C_earthbound.jpg", title: "Aft Lounge Earthbound", size: "large" },
+      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_B_serene.jpg", title: "Forward Lounge B", size: "medium" },
+      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_midnight.jpg", title: "Stateroom Midnight", size: "small" },
+      { image: "/iMAGES/BBJ-Select-737-7-AFT_lounge_C_earthbound.jpg", title: "Aft Lounge Earthbound", size: "large" },
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Comfort Zone", size: "medium" },
@@ -221,7 +221,7 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Private Study", size: "medium" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Relaxation Area", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Spacious Foyer", size: "medium" },
-      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "ACJ 747 Exterior", size: "large" }
+      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "ACJ 747 Exterior", size: "large" }
     ]
   },
   "bbj-777": {
@@ -295,7 +295,7 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/777x-tarmac.jpg", title: "ACJ 777X on Tarmac", size: "large" },
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "medium" },
-      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "GE9X Engine", size: "small" },
+      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "GE9X Engine", size: "small" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "medium" },
       { image: "/iMAGES/bbj-engine-side.jpg", title: "Engine Detail", size: "large" },
@@ -306,6 +306,317 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Private Study", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Spacious Foyer", size: "medium" },
       { image: "/iMAGES/777x-tarmac.jpg", title: "ACJ 777X Profile", size: "large" }
+    ]
+  },
+  "acj-twenty-twenty": {
+    name: "ACJ TwoTwenty",
+    tagline: "A New Standard for Modern Long-Range Private Aviation",
+    description: "The ACJ TwoTwenty represents a new category of private jet charter — combining the efficiency of a next-generation narrow-body platform with the comfort, space, and presence expected from an Airbus Corporate Jet. Designed for long-range missions and extended time onboard, the ACJ TwoTwenty offers a refined alternative to traditional large-cabin business jets, while remaining more flexible and efficient than wide-body platforms. With a cabin length of 23.8 meters, it delivers a sense of openness rarely found in its class. The aircraft's wide fuselage allows for true multi-zone layouts, enabling separation between work, dining, relaxation, and rest. The result is a cabin that feels residential, quiet, and composed — ideal for long-duration missions where comfort and privacy matter as much as range.",
+    heroImage: "/iMAGES/Boieng Inside.jpg",
+    overviewImage: "/iMAGES/BoeingMainFront.jpg",
+    crewImage: "/iMAGES/32-2200_ENTRY.jpg",
+    features: [
+      "Full-height cabins with wide-body proportions",
+      "Intercontinental and ultra-long-range capability",
+      "Quiet, smooth flight experience"
+    ],
+    benefits: [
+      {
+        title: "More space than traditional long-range business jets",
+        description: "The ACJ TwoTwenty offers unmatched cabin volume and multi-zone layouts for work, dining, relaxation, and rest.",
+        icon: "plane"
+      },
+      {
+        title: "Greater efficiency than wide-body ACJs",
+        description: "A refined alternative for certain missions, remaining more flexible and efficient than wide-body platforms.",
+        icon: "dollar"
+      },
+      {
+        title: "Modern cabin optimized for long hours onboard",
+        description: "A cabin that feels residential, quiet, and composed — ideal for long-duration missions.",
+        icon: "shield"
+      },
+      {
+        title: "Airbus-level engineering with bespoke interior",
+        description: "Next-generation narrow-body platform with the comfort and presence expected from an Airbus Corporate Jet.",
+        icon: "settings"
+      }
+    ],
+    interiorFeatures: [
+      "Private bedroom suites",
+      "Dedicated lounge and dining areas",
+      "Conference or meeting zones",
+      "Full-size lavatory and shower options (layout dependent)"
+    ],
+    specs: {
+      range: "10,465 km",
+      passengers: "VIP configuration",
+      cabinSpace: "73 m² floor / 146 m³ volume"
+    },
+    performance: {
+      engine: "Pratt & Whitney PW1500G geared turbofan",
+      mtow: "63,730 kg",
+      cruiseSpeed: "Long-range cruise",
+      fuelBurn: "Efficient PW1500G",
+      maxAltitude: "12,500 m",
+      airportCapability: "Intercontinental sectors"
+    },
+    technicalSpecs: {
+      range: "10,465 km",
+      engines: "Pratt & Whitney PW1500G",
+      cabinArea: "73 m²",
+      mtow: "63,730 kg",
+      cabinZones: "Multi-zone",
+      cabinDiameter: "3.30 m",
+      efficiency: "28,570 litres fuel (up to 5 ACTs)"
+    },
+    pricing: {
+      hourlyRate: "Bespoke quotation",
+      category: "narrowbody"
+    },
+    gallery: [
+      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
+      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
+      { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Entryway", size: "medium" },
+      { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "large" },
+      { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
+      { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
+      { image: "/iMAGES/homepage-comfort.jpg", title: "Comfort Zone", size: "large" },
+      { image: "/iMAGES/737-tarmac.jpg", title: "ACJ TwoTwenty on Tarmac", size: "large" }
+    ]
+  },
+  "acj-neo": {
+    name: "ACJ neo",
+    tagline: "Long-Range Capability with True Wide-Cabin Presence",
+    description: "The ACJ neo is the cornerstone of the Airbus Corporate Jet family — offering exceptional intercontinental range, a significantly wider cabin than traditional business jets, and the flexibility to support highly customized private interiors. Built on the A320neo platform, the ACJ neo is designed for missions where space, endurance, and privacy are non-negotiable, yet where a wide-body aircraft may not be operationally required. With a cabin length of 27.74 meters and a notably wide fuselage, the ACJ neo provides an interior environment that feels open, stable, and composed even on long-duration flights. The cabin's width and ceiling height contribute to a residential feel, making the ACJ neo particularly well suited for flights exceeding ten hours.",
+    heroImage: "/iMAGES/Boieng Inside.jpg",
+    overviewImage: "/iMAGES/BoeingMainFront.jpg",
+    crewImage: "/iMAGES/32-2200_ENTRY.jpg",
+    features: [
+      "Greater cabin width and volume than traditional long-range business jets",
+      "Intercontinental range without wide-body complexity",
+      "Stable, quiet platform for long hours in the air"
+    ],
+    benefits: [
+      {
+        title: "Greater cabin width and volume",
+        description: "True wide-cabin presence with 96 m² floor area and 220 m³ volume — far beyond traditional business jet configurations.",
+        icon: "plane"
+      },
+      {
+        title: "Intercontinental range without wide-body",
+        description: "11,100 km maximum range (8 passengers) for nonstop connectivity between major global centers.",
+        icon: "dollar"
+      },
+      {
+        title: "Highly customizable interiors",
+        description: "True separation of living spaces: bedroom suites, lounge, dining, conference and workspaces, guest and staff areas.",
+        icon: "shield"
+      },
+      {
+        title: "Stable, quiet platform",
+        description: "Optimized for long hours in the air — ideal for corporate, government, family, and entertainment delegations.",
+        icon: "settings"
+      }
+    ],
+    interiorFeatures: [
+      "Full-size private bedroom suites",
+      "Dedicated lounge and dining areas",
+      "Conference and workspaces",
+      "Separate guest and staff areas (configuration dependent)"
+    ],
+    specs: {
+      range: "11,100 km",
+      passengers: "8+ (VIP configuration)",
+      cabinSpace: "96 m² floor / 220 m³ volume"
+    },
+    performance: {
+      engine: "CFM LEAP-1A or Pratt & Whitney PW1100G",
+      mtow: "79 tonnes",
+      cruiseSpeed: "Long-range cruise",
+      fuelBurn: "Next-generation efficiency",
+      maxAltitude: "12,500 m",
+      airportCapability: "Intercontinental sectors"
+    },
+    technicalSpecs: {
+      range: "11,100 km",
+      engines: "CFM LEAP-1A or Pratt & Whitney PW1100G",
+      cabinArea: "96 m²",
+      mtow: "79 tonnes",
+      cabinZones: "Multi-zone",
+      cabinDiameter: "3.95 m",
+      efficiency: "34,351 litres (4 ACTs)"
+    },
+    pricing: {
+      hourlyRate: "Bespoke quotation",
+      category: "narrowbody"
+    },
+    gallery: [
+      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
+      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
+      { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Entryway", size: "medium" },
+      { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "large" },
+      { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
+      { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
+      { image: "/iMAGES/homepage-comfort.jpg", title: "Comfort Zone", size: "large" },
+      { image: "/iMAGES/737-tarmac.jpg", title: "ACJ neo on Tarmac", size: "large" }
+    ]
+  },
+  "acj330-neo": {
+    name: "ACJ330neo",
+    tagline: "Wide-Body Private Aviation Without Compromise",
+    description: "The ACJ330neo represents the pinnacle of wide-body private aviation, specifically engineered for elite travelers who require long-duration missions without compromising on space or discretion. With the ability to remain airborne for nearly twenty-four hours, this aircraft provides a residential-scale environment that allows heads of state and global delegations to maintain their normal routines. Its massive cabin dimensions, featuring a length of 45 meters, create a spatial experience that far exceeds any traditional narrow-body jet. By prioritizing both reliability and comfort, the ACJ330neo serves as a mobile headquarters for those navigating complex, multi-day global itineraries. It bridges the gap between high-performance transport and luxury living, ensuring that ultra-high-net-worth individuals and royal families can rest and operate effectively during ultra-long-haul flights. This aircraft is not just a mode of transport, but a purpose-built platform for continuous, private, and global connectivity.",
+    heroImage: "/iMAGES/Boieng Inside.jpg",
+    overviewImage: "/iMAGES/BoeingMainFront.jpg",
+    crewImage: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg",
+    features: [
+      "Ultra-long-range, nonstop capability (up to 21 hours)",
+      "Residential-scale cabin comfort and privacy",
+      "True wide-body space for delegation and staff"
+    ],
+    benefits: [
+      {
+        title: "Ultra-long-range nonstop capability",
+        description: "18,890 km maximum range (25 passengers), up to 21 hours endurance — essential for intercontinental and multi-day missions.",
+        icon: "plane"
+      },
+      {
+        title: "Cabin comfort matching private residential standards",
+        description: "611 m³ cabin volume, up to 243 m² floor area — fully segregated living zones with bedroom suites, lounges, dining, and conference rooms.",
+        icon: "dollar"
+      },
+      {
+        title: "Privacy over extended durations",
+        description: "Multiple passengers can enjoy separation and discretion; staff, security, and service areas are integral to the layout.",
+        icon: "shield"
+      },
+      {
+        title: "Security, delegation separation, and staff operations",
+        description: "Ideally suited for government, royal, presidential, and corporate delegations requiring absolute privacy and operational flexibility.",
+        icon: "settings"
+      }
+    ],
+    interiorFeatures: [
+      "Master bedroom suites with ensuite facilities",
+      "Multiple lounges and private seating areas",
+      "Dedicated dining rooms",
+      "Conference and briefing rooms",
+      "Staff, security, and service areas"
+    ],
+    specs: {
+      range: "18,890 km",
+      passengers: "25+ (VIP configuration)",
+      cabinSpace: "Up to 243 m² / 611 m³ volume"
+    },
+    performance: {
+      engine: "Rolls-Royce Trent 7000",
+      mtow: "251 tonnes",
+      cruiseSpeed: "Ultra-long-haul",
+      fuelBurn: "12% lower vs previous generation",
+      maxAltitude: "12,497 m",
+      airportCapability: "Global long-haul"
+    },
+    technicalSpecs: {
+      range: "18,890 km",
+      engines: "Rolls-Royce Trent 7000",
+      cabinArea: "Up to 243 m²",
+      mtow: "251 tonnes",
+      cabinZones: "Fully segregated",
+      cabinDiameter: "5.64 m",
+      efficiency: "139,090 litres"
+    },
+    pricing: {
+      hourlyRate: "Bespoke quotation",
+      category: "widebody"
+    },
+    gallery: [
+      { image: "/iMAGES/Arabian-Heritage-1.2.jpg", title: "Wide-Body Interior", size: "large" },
+      { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Room", size: "large" },
+      { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
+      { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "medium" },
+      { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
+      { image: "/iMAGES/homepage-comfort.jpg", title: "Lounge Area", size: "large" },
+      { image: "/iMAGES/AERIA-777-Concept-Interior-1.jpg", title: "Private Suite", size: "medium" },
+      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "ACJ330neo Exterior", size: "large" }
+    ]
+  },
+  "acj350": {
+    name: "ACJ350",
+    tagline: "The Pinnacle of Ultra-Long-Range Private Aviation",
+    description: "The ACJ350 represents the highest expression of private aviation capability. Designed for nonstop global missions, extended endurance, and residential-scale comfort, it is the flagship aircraft within the Airbus Corporate Jet portfolio. This is not simply a wide-body private jet — it is a long-duration, intercontinental platform built for heads of state, royal families, ultra-high-net-worth individuals, and global delegations who require uninterrupted reach, absolute privacy, and uncompromising space. With a cabin length exceeding 51 meters and one of the widest fuselages ever used in private aviation, the ACJ350 delivers a spatial experience unmatched in the charter market. The aircraft is designed to support extended time onboard — allowing passengers to live, work, rest, and move freely during missions lasting nearly an entire day.",
+    heroImage: "/iMAGES/Boieng Inside.jpg",
+    overviewImage: "/iMAGES/BoeingMainFront.jpg",
+    crewImage: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg",
+    features: [
+      "Nonstop global reach without technical stops",
+      "Extended endurance and onboard livability (up to 22 hours)",
+      "Residential-scale comfort and total privacy"
+    ],
+    benefits: [
+      {
+        title: "Nonstop global reach",
+        description: "20,550 km maximum range (25 passengers), up to 22 hours nonstop — uninterrupted global reach without technical stops.",
+        icon: "plane"
+      },
+      {
+        title: "Extended endurance and onboard livability",
+        description: "854.1 m³ cabin volume, up to 308 m² floor area — true residential layouts for living, working, and resting on ultra-long missions.",
+        icon: "dollar"
+      },
+      {
+        title: "Multiple principals or delegations with total privacy",
+        description: "Full master suites, guest suites, formal dining, conference rooms, lounges, wellness and staff zones, dedicated security and service spaces.",
+        icon: "shield"
+      },
+      {
+        title: "Security, diplomacy, and mission continuity",
+        description: "Ideally suited for presidential and royal transport, government and diplomatic missions, ultra-long-haul family travel, and global summits.",
+        icon: "settings"
+      }
+    ],
+    interiorFeatures: [
+      "Full master bedroom suites with ensuite bathrooms",
+      "Multiple private guest suites",
+      "Formal dining rooms",
+      "Executive conference and briefing rooms",
+      "Lounges, wellness areas, and staff zones",
+      "Dedicated security and service spaces"
+    ],
+    specs: {
+      range: "20,550 km",
+      passengers: "25+ (VIP configuration)",
+      cabinSpace: "Up to 308 m² / 854.1 m³ volume"
+    },
+    performance: {
+      engine: "Rolls-Royce Trent XWB 84",
+      mtow: "280 tonnes",
+      cruiseSpeed: "Ultra-long-haul",
+      fuelBurn: "Up to 25% lower vs competing class",
+      maxAltitude: "13,100 m",
+      airportCapability: "Global nonstop"
+    },
+    technicalSpecs: {
+      range: "20,550 km",
+      engines: "Rolls-Royce Trent XWB 84",
+      cabinArea: "Up to 308 m²",
+      mtow: "280 tonnes",
+      cabinZones: "Residential layout",
+      cabinDiameter: "5.96 m",
+      efficiency: "166,500 litres"
+    },
+    pricing: {
+      hourlyRate: "Bespoke quotation",
+      category: "widebody"
+    },
+    gallery: [
+      { image: "/iMAGES/Arabian-Heritage-1.2.jpg", title: "Flagship Interior", size: "large" },
+      { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Formal Dining", size: "large" },
+      { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
+      { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "medium" },
+      { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
+      { image: "/iMAGES/homepage-comfort.jpg", title: "Lounge Area", size: "large" },
+      { image: "/iMAGES/AERIA-777-Concept-Interior-1.jpg", title: "Master Suite", size: "medium" },
+      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "ACJ350 Exterior", size: "large" }
     ]
   },
   "bbj-787": {
@@ -383,7 +694,7 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "large" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "small" },
       { image: "/iMAGES/AERIA-777-Concept-Interior-1.jpg", title: "Premium Cabin", size: "medium" },
-      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "Engine Technology", size: "large" },
+      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "Engine Technology", size: "large" },
       { image: "/iMAGES/Arabian-Heritage-1.2.jpg", title: "Luxury Suite", size: "medium" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Relaxation Space", size: "small" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Formal Dining", size: "large" },
@@ -424,7 +735,7 @@ function PerformanceCarousel({ aircraft }: { aircraft: typeof aircraftData[keyof
     {
       title: "Engine Details",
       description: `${aircraft.technicalSpecs.engines}. Advanced powerplants delivering reliability and performance.`,
-      image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
+      image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
       selector: "Engine Details",
       specs: [
         { label: "Engines", value: aircraft.technicalSpecs.engines },
@@ -690,7 +1001,7 @@ function FeatureCarousel({ aircraft }: { aircraft: typeof aircraftData[keyof typ
     {
       title: "Cost Per Hour",
       description: `Charter pricing for the ${aircraft.name}. Costs vary based on multiple factors including aircraft model, cabin configuration, distance, and operational requirements.`,
-      image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
+      image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
       selector: "Cost Per Hour",
       pricingInfo: {
         hourlyRate: aircraft.pricing.hourlyRate,
@@ -1334,15 +1645,15 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                     className="relative flex-shrink-0 cursor-pointer w-[60vw] overflow-hidden transition-[height] duration-500 ease-in-out"
                     style={{ height: "82%" }}
                     onClick={() => openLightbox(gallery[totalGallery - 1].image, gallery[totalGallery - 1].title)}
-                  >
-                    <Image
+            >
+              <Image
                       src={gallery[totalGallery - 1]?.image || "/iMAGES/Boieng Inside.jpg"}
                       alt={gallery[totalGallery - 1]?.title || "Gallery"}
-                      fill
+                fill
                       className="object-cover"
-                      quality={90}
-                    />
-                  </div>
+                quality={90}
+              />
+              </div>
                   {gallery.map((item, i) => (
                     <div
                       key={i}
@@ -1351,36 +1662,36 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                         height: i === galleryIndex ? "100%" : "82%",
                       }}
                       onClick={() => openLightbox(item.image, item.title)}
-                    >
-                      <Image
+            >
+              <Image
                         src={item.image || "/iMAGES/Boieng Inside.jpg"}
                         alt={item.title || "Gallery"}
-                        fill
+                fill
                         className="object-cover"
-                        quality={90}
-                      />
-                    </div>
+                quality={90}
+              />
+              </div>
                   ))}
                   {/* Append first image so at last index we see first on right */}
                   <div
                     className="relative flex-shrink-0 cursor-pointer w-[60vw] overflow-hidden transition-[height] duration-500 ease-in-out"
                     style={{ height: "82%" }}
                     onClick={() => openLightbox(gallery[0].image, gallery[0].title)}
-                  >
-                    <Image
+            >
+              <Image
                       src={gallery[0]?.image || "/iMAGES/Boieng Inside.jpg"}
                       alt={gallery[0]?.title || "Gallery"}
-                      fill
+                fill
                       className="object-cover"
-                      quality={90}
-                    />
-                  </div>
-                </div>
-
+                quality={90}
+              />
+              </div>
+            </div>
+            
                 {/* Left dim overlay + prev button (desktop) */}
                 <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[20vw] z-10 pointer-events-none">
                   <div className="absolute inset-0 " />
-                </div>
+              </div>
                 <button
                   type="button"
                   onClick={() => setGalleryIndex(prevIndex)}
@@ -1393,7 +1704,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                 {/* Right dim overlay + next button (desktop) */}
                 <div className="hidden md:block absolute right-0 top-0 bottom-0 w-[20vw] z-10 pointer-events-none">
                   <div className="absolute inset-0 " />
-                </div>
+              </div>
                 <button
                   type="button"
                   onClick={() => setGalleryIndex(nextIndex)}
@@ -1406,8 +1717,8 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                 {/* Pagination - bottom right of center zone */}
                 <div className="absolute bottom-3 right-[20vw] md:right-[20vw] text-white/90 text-sm font-light drop-shadow-md z-10">
                   {galleryIndex + 1} / {totalGallery}
-                </div>
-
+            </div>
+            
                 {/* Mobile arrows */}
                 <div className="md:hidden absolute inset-y-0 left-0 right-0 flex items-center justify-between px-3 pointer-events-none z-20">
                   <button
@@ -1426,7 +1737,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                   >
                     <ChevronRight className="w-5 h-5 text-white" />
                   </button>
-                </div>
+              </div>
               </div>
             </div>
           )}

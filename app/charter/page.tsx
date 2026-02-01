@@ -488,7 +488,7 @@ export default function CharterGuidePage() {
                 <div className="cost-col">
                   <div className="cost-col-image">
                     <Image
-                      src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                      src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
                       alt="ACJ Charter"
                       width={600}
                       height={400}
