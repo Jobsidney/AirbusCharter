@@ -23,9 +23,9 @@ export function WhyChooseSection() {
           <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
             Independent Resource
           </span>
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
             <span className="text-[#F5F5F5]">About </span>
-            <span className="text-[#C9A24D] italic">BoeingBusinessJet.com</span>
+            <span className="text-[#C9A24D] italic">AirbusCharterJet.com</span>
           </h2>
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-libre-baskerville font-light text-white/70 mt-2">
             Our Purpose
@@ -40,8 +40,8 @@ export function WhyChooseSection() {
         {/* Content */}
         <div className="space-y-12">
           <p className="text-white/80 text-lg md:text-xl leading-relaxed text-center font-light font-libre-baskerville">
-            BoeingBusinessJet.com was created to serve as the world&apos;s most comprehensive 
-            independent reference for BBJ aircraft. Our mission is to support:
+            AirbusCharterJet.com was created to serve as the world&apos;s most comprehensive 
+            independent reference for ACJ aircraft. Our mission is to support:
           </p>
 
           {/* Audience List */}
@@ -63,8 +63,8 @@ export function WhyChooseSection() {
           {/* Disclaimer Box - Subtle */}
           <div className="my-16 pt-8 border-t border-[#C9A24D]/10">
             <p className="text-center text-xs text-white/50 leading-relaxed max-w-2xl mx-auto font-light font-libre-baskerville">
-              <strong className="font-normal">Disclaimer:</strong> BoeingBusinessJet.com is an independent informational resource and is not affiliated with, 
-              endorsed by, or sponsored by The Boeing Company or Boeing Business Jets. For official information, visit{" "}
+              <strong className="font-normal">Disclaimer:</strong> AirbusCharterJet.com is an independent informational resource and is not affiliated with, 
+              endorsed by, or sponsored by The Boeing Company or Airbus Corporate Jets. For official information, visit{" "}
               <a 
                 href="https://businessjets.boeing.com" 
                 target="_blank" 

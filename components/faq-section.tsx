@@ -14,11 +14,11 @@ export function FAQSection() {
       answer: "",
       benefits: [
         "Aircraft-specific technical specifications",
-        "BBJ range maps and mission profiles",
+        "ACJ range maps and mission profiles",
         "Interior layouts and completion considerations",
         "Operating cost and ownership insights",
         "Charter planning guidance and use cases",
-        "Comparative analysis between BBJ models"
+        "Comparative analysis between ACJ models"
       ]
     },
     
@@ -49,7 +49,7 @@ export function FAQSection() {
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
                 Your Guide
               </span>
-              <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-tight mb-4 font-playfair-display">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                 <span className="text-[#F5F5F5]">How to Use </span>
                 <span className="text-[#C9A24D] italic">This Resource</span>
               </h2>
@@ -58,7 +58,7 @@ export function FAQSection() {
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mb-8"></div>
               <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-xl font-libre-baskerville">
-              BoeingBusinessJet.com is designed as a technical and educational reference for professionals and clients evaluating Boeing Business Jets. Content is structured to support research, comparison, and planning — not sales.</p>
+              AirbusCharterJet.com is designed as a technical and educational reference for professionals and clients evaluating Airbus Corporate Jets. Content is structured to support research, comparison, and planning — not sales.</p>
             </div>
 
             <div className="space-y-0">
@@ -138,7 +138,7 @@ export function FAQSection() {
                 </div>
                 <div className="text-3xl font-bold text-[#0E1116] mb-2 text-center font-playfair-display">150+</div>
                 <p className="text-xs text-[#0E1116]/80 text-center leading-relaxed font-instrument-sans">
-                  Boeing Business Jets aircraft in service worldwide.
+                  Airbus Corporate Jets aircraft in service worldwide.
                 </p>
               </div>
             </div>

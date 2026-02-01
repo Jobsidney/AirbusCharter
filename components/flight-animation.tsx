@@ -22,7 +22,7 @@ export function FlightAnimation() {
         <div className="absolute top-80 left-2/3 w-44 h-22 bg-white/50 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
       </div>
 
-      {/* Boeing Airplane */}
+      {/* Airbus Airplane */}
       <div className="absolute top-1/2 left-0 transform -translate-y-1/2 animate-fly">
         <svg
           width="200"
@@ -84,7 +84,7 @@ export function FlightAnimation() {
             fill="#1a1a1a"
           />
           
-          {/* Boeing Logo Text */}
+          {/* Airbus Logo Text */}
           <text
             x="100"
             y="45"
@@ -93,7 +93,7 @@ export function FlightAnimation() {
             fontSize="8"
             fontFamily="Arial, sans-serif"
           >
-            BOEING
+            AIRBUS
           </text>
         </svg>
       </div>

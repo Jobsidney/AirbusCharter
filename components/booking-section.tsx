@@ -10,8 +10,8 @@ export function BookingSection() {
       <div className="flex flex-col lg:flex-row min-h-[420px]">
         {/* Left content */}
         <div className="w-full lg:w-1/2 bg-black text-white px-6 sm:px-10 lg:px-16 py-14 flex flex-col justify-center space-y-6">
-          <h2 className="text-4xl sm:text-5xl font-semibold leading-tight">
-            Experience Boeing
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-playfair-display">
+            Experience Airbus
               <br />
             Excellence, Fly Now!
             </h2>

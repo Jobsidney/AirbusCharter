@@ -1,8 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { Instagram, Facebook, Twitter, Youtube, ChevronDown } from "lucide-react";
-
 export function HeroSection() {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about-us");
@@ -10,82 +7,47 @@ export function HeroSection() {
   };
 
   return (
-    <>
-      <main className="bg-[#0E1116] overflow-x-hidden h-screen  md:pt-0 lg:pt-0 xl:pt-0">
-        <section className="relative flex flex-col justify-between min-h-[calc(100vh)] overflow-x-hidden hero-section-bg">
-          {/* Background overlay - darker charcoal for luxury */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0E1116]/80 via-[#0E1116]/70 to-[#0E1116]/90 z-0" />
+    <main className="bg-[#0E1116] overflow-x-hidden min-h-screen flex flex-col">
+      <section className="relative flex flex-col flex-1 min-h-[100vh] overflow-x-hidden hero-section-bg">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0E1116]/85 via-[#0E1116]/75 to-[#0E1116]/95 z-0" />
 
-          <div className="relative z-10 pt-32 lg:pt-32  pb-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
-              <div className="relative w-full bg-transparent overflow-x-hidden">
-                {/* Large BOEING Title with Luxury Font */}
-                <h1 className="luxury-heading text-[36px] sm:text-[45px] md:text-[54px] lg:text-[72px] xl:text-[81px] leading-[1.1] tracking-tight text-center mb-6 font-playfair-display">
-                  <span
-                    className="bg-clip-text text-transparent drop-shadow-2xl animate-gradient-sweep"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(90deg, #F5F5F5 0%, #F5F5F5 15%, #C9A24D 40%, #D4B05E 50%, #C9A24D 60%, #F5F5F5 85%, #F5F5F5 100%)",
-                      WebkitBackgroundClip: "text",
-                      backgroundClip: "text",
-                      backgroundSize: "200% 100%",
-                    }}
-                  >
-                    Boeing Business Jets
-                  </span>
-                </h1>
-                
-                {/* Luxury Tagline */}
-                <p className="text-[#C9A24D] text-lg md:text-xl lg:text-2xl tracking-[0.3em] uppercase text-center mb-8 font-light">
-                  Charter Without Compromise
-                </p>
-                
-                {/* Luxury Description with Gold Accent */}
-                <div className="flex flex-col items-center text-center gap-6 mt-8">
-                  <div className="max-w-3xl">
-                    <div className="gold-accent-line w-24 mx-auto mb-6"></div>
-                    <p className="text-base sm:text-lg md:text-xl text-[#F5F5F5]/90 leading-relaxed font-light tracking-wide">
-                      For clients who require nonstop intercontinental capability, cabin scale, and discretion, Boeing Business Jets remain the preferred platform for ultra-long-range charter missions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative z-10 mt-24 overflow-x-hidden">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
-              <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-                <div className="flex items-center gap-4 group bg-white/5 backdrop-blur-md p-4 border border-[#C9A24D]/20 hover:border-[#C9A24D]/40 transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#C9A24D] to-[#9C8240] flex items-center justify-center flex-shrink-0 shadow-md group-hover:shadow-lg transition-shadow">
-                    <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <rect x="4" y="4" width="8" height="8" rx="1" />
-                      <rect x="12" y="12" width="8" height="8" rx="1" />
-                      <text x="12" y="18" fontSize="7" fill="currentColor" textAnchor="middle" fontWeight="600">%</text>
-                    </svg>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#F5F5F5]/80 max-w-[380px] leading-relaxed font-light">
-                    Your independent resource for the complete Boeing Business Jet family — from the BBJ 737 series to the ultra-long-range BBJ 777 and BBJ 787 Dreamliner VIP variants.
-                  </p>
-                </div>
-
-            
-              </div>
-            </div>
-            <div className="flex justify-center pt-12 pb-8 relative z-10">
-            <button
-              onClick={scrollToAbout}
-              className="w-16 h-16 bg-[#0E1116]/40 backdrop-blur-md border-2 border-[#C9A24D]/30 rounded-full flex items-center justify-center hover:border-[#C9A24D] hover:bg-[#C9A24D]/10 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-110"
-              aria-label="Scroll down"
+        <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-16 pt-24 pb-20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1
+              className="luxury-heading text-[40px] sm:text-[52px] md:text-[64px] lg:text-[80px] xl:text-[90px] leading-[1.05] tracking-tight text-center mb-5"
+              style={{
+                backgroundImage:
+                  "linear-gradient(90deg, #F5F5F5 0%, #F5F5F5 12%, #C9A24D 38%, #D4B05E 50%, #C9A24D 62%, #F5F5F5 88%, #F5F5F5 100%)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+                backgroundSize: "200% 100%",
+                color: "transparent",
+              }}
             >
-              <ChevronDown className="w-8 h-8 text-[#C9A24D]" strokeWidth={2.5} />
-            </button>
-          </div>
-          </div>
+              Airbus Charter Jets
+            </h1>
 
-         
-        </section> 
-      </main>
-    </>
+            <p className="text-[#C9A24D] text-base md:text-md lg:text-lg tracking-[0.35em] uppercase text-center mb-12 font-light">
+              Charter Without Compromise
+            </p>
+
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-10" />
+            <p className="text-[#F5F5F5]/90 text-base sm:text-md md:text-lg leading-relaxed font-light tracking-wide max-w-2xl mx-auto">
+              For clients who require nonstop intercontinental capability, cabin scale, and discretion, Airbus Charter Jets remain the preferred platform for ultra-long-range charter missions.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative z-10 flex justify-center pb-10">
+          <button
+            onClick={scrollToAbout}
+            className="w-10 h-14 rounded-full border-2 border-white bg-transparent backdrop-blur-sm flex items-center justify-center hover:bg-white/5 transition-all duration-300"
+            aria-label="Scroll to next section"
+          >
+            <span className="hero-scroll-dot w-1.5 h-1.5 rounded-full bg-white block" />
+          </button>
+        </div>
+      </section>
+    </main>
   );
 }

@@ -31,7 +31,7 @@ export default function BlogDetailPage() {
       {/* Hero Section */}
       <section className="relative h-[30vh] min-h-[200px] bg-cover bg-center flex items-center justify-center mb-[60px]" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1600)' }}>
         <div className="max-w-[1280px] mx-auto px-5 md:px-10 w-full text-center">
-          <div className="text-white/90 text-sm mb-3">Newest Blog • 3 Min</div>
+          <div className="text-white/90 text-sm mb-3">Newest Blog</div>
           <h1 className="text-white text-[36px] md:text-[52px] font-bold leading-tight mb-5 font-playfair-display">The Art of Home Transformation</h1>
           <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-[#C9A24D]/20 px-2 py-2 pl-2">
             <Image
@@ -62,19 +62,16 @@ export default function BlogDetailPage() {
                   <Link
                     key={post.id}
                     href={`/blog/${post.slug}`}
-                    className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300"
+                    className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none"
                   >
-                    <div className="relative w-full h-[120px] overflow-hidden">
+                    <div className="relative w-full h-[120px] overflow-hidden rounded-none">
                       <Image
                         src={post.image}
                         alt={post.alt}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-400"
+                        className="object-cover group-hover:scale-105 transition-transform duration-400 rounded-none"
                         sizes="300px"
                       />
-                      <span className="absolute top-2 left-2 bg-[#C9A24D] text-white py-1 px-2 text-[10px] font-semibold font-instrument-sans">
-                        {post.readTime}
-                      </span>
                     </div>
                     <div className="p-3">
                       <h4 className="text-sm font-semibold text-white/90 mb-2 leading-tight line-clamp-2">
@@ -99,19 +96,16 @@ export default function BlogDetailPage() {
                   <Link
                     key={post.id}
                     href={`/blog/${post.slug}`}
-                    className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300"
+                    className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none"
                   >
-                    <div className="relative w-full h-[120px] overflow-hidden">
+                    <div className="relative w-full h-[120px] overflow-hidden rounded-none">
                       <Image
                         src={post.image}
                         alt={post.alt}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-400"
+                        className="object-cover group-hover:scale-105 transition-transform duration-400 rounded-none"
                         sizes="300px"
                       />
-                      <span className="absolute top-2 left-2 bg-[#C9A24D] text-white py-1 px-2 text-[10px] font-semibold font-instrument-sans">
-                        {post.readTime}
-                      </span>
                     </div>
                     <div className="p-3">
                       <h4 className="text-sm font-semibold text-white/90 mb-2 leading-tight line-clamp-2">
@@ -137,7 +131,7 @@ export default function BlogDetailPage() {
             In the fast-evolving world of home decor, embracing the art of transformation is the key to keeping your living spaces fresh, vibrant, and in tune with the latest trends. At StuffUs, we believe that your home is a canvas waiting to be adorned with innovation and style.
           </p>
 
-          <h2 className="luxury-heading text-[32px] font-bold my-[50px] first:mt-0 font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight my-[50px] first:mt-0 font-playfair-display">
             <span className="text-[#F5F5F5]">Introduction</span>
           </h2>
           
@@ -196,7 +190,7 @@ export default function BlogDetailPage() {
         {/* Section Separator - Top Gold Line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent"></div>
         <div className="flex justify-between items-center mb-10 mt-8">
-          <h2 className="luxury-heading text-[36px] font-bold font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
             <span className="text-[#F5F5F5]">Latest </span>
             <span className="text-[#C9A24D] italic">Blog</span>
           </h2>
@@ -215,15 +209,14 @@ export default function BlogDetailPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
-          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300">
-            <div className="relative w-full h-[200px]">
+          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none">
+            <div className="relative w-full h-[200px] overflow-hidden rounded-none">
               <Image
                 src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=600&h=400&fit=crop"
                 alt="Blog"
                 fill
-                className="object-cover"
+                className="object-cover rounded-none"
               />
-              <span className="absolute top-3 left-3 bg-[#C9A24D] text-white py-1.5 px-3 text-xs font-semibold">5 Min</span>
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-3 leading-tight text-white/90">Eco-Friendly Living: Sustainable Choices for a Greener Home</h3>
@@ -244,15 +237,14 @@ export default function BlogDetailPage() {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300">
-            <div className="relative w-full h-[200px]">
+          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none">
+          <div className="relative w-full h-[200px] overflow-hidden rounded-none">
               <Image
                 src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&h=400&fit=crop"
                 alt="Blog"
                 fill
-                className="object-cover"
+                className="object-cover rounded-none"
               />
-              <span className="absolute top-3 left-3 bg-[#C9A24D] text-white py-1.5 px-3 text-xs font-semibold">5 Min</span>
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-3 leading-tight text-white/90">The Comfort Zone: Choosing the Perfect Furniture for Your Home</h3>
@@ -273,15 +265,14 @@ export default function BlogDetailPage() {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300">
-            <div className="relative w-full h-[200px]">
+          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none">
+          <div className="relative w-full h-[200px] overflow-hidden rounded-none">
               <Image
                 src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop"
                 alt="Blog"
                 fill
-                className="object-cover"
+                className="object-cover rounded-none"
               />
-              <span className="absolute top-3 left-3 bg-[#C9A24D] text-white py-1.5 px-3 text-xs font-semibold">5 Min</span>
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-3 leading-tight text-white/90">Bedroom Bliss: Creating a Relaxing Sanctuary</h3>
@@ -302,15 +293,14 @@ export default function BlogDetailPage() {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300">
-            <div className="relative w-full h-[200px]">
+          <div className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none">
+          <div className="relative w-full h-[200px] overflow-hidden rounded-none">
               <Image
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop"
                 alt="Blog"
                 fill
-                className="object-cover"
+                className="object-cover rounded-none"
               />
-              <span className="absolute top-3 left-3 bg-[#C9A24D] text-white py-1.5 px-3 text-xs font-semibold">5 Min</span>
             </div>
             <div className="p-6">
               <h3 className="text-lg font-semibold mb-3 leading-tight text-white/90">Garden Elegance: Bringing Nature to Your Home</h3>

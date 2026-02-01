@@ -12,7 +12,7 @@ export default function CharterGuidePage() {
         <div className="absolute inset-0">
           <Image
             src="/iMAGES/777x-tarmac.jpg"
-            alt="BBJ Charter"
+            alt="ACJ Charter"
             fill
             className="object-cover"
             priority
@@ -22,16 +22,16 @@ export default function CharterGuidePage() {
         
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
-            BBJ Charter Guide
+            ACJ Charter Guide
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4">
-            How to Charter a Boeing Business Jet
+            How to Charter a Airbus Corporate Jet
           </p>
           
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base mt-8">
             <Link href="/" className="hover:text-[#C9A24D] transition-colors">
-              Boeing
+              Home
             </Link>
             <ChevronRight className="w-4 h-4" />
             <span className="text-white/80">Charter Guide</span>
@@ -49,7 +49,7 @@ export default function CharterGuidePage() {
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
                 VIP Charter Experience
               </span>
-              <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                 <span className="text-[#F5F5F5]">The Ultimate </span>
                 <span className="text-[#C9A24D] italic">VIP Airliner</span>
               </h2>
@@ -58,16 +58,16 @@ export default function CharterGuidePage() {
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-4xl mx-auto font-libre-baskerville">
-                Chartering a Boeing Business Jet (BBJ) offers a level of space, comfort, and long-range performance unmatched by any traditional private jet. With multi-zone interiors, true bedrooms, dining rooms, showers, and up to 10,000+ nautical miles of range, BBJs are designed for missions where privacy, productivity, and comfort matter most.
+                Chartering a Airbus Corporate Jet (ACJ) offers a level of space, comfort, and long-range performance unmatched by any traditional private jet. With multi-zone interiors, true bedrooms, dining rooms, showers, and up to 10,000+ nautical miles of range, ACJs are designed for missions where privacy, productivity, and comfort matter most.
               </p>
               <p className="text-lg text-white/80 font-medium mt-6 max-w-3xl mx-auto">
-                This guide explains everything you need to know before booking a BBJ charter.
+                This guide explains everything you need to know before booking a ACJ charter.
               </p>
             </div>
           </div>
         </section>
 
-        {/* What Is a BBJ Charter Section */}
+        {/* What Is a ACJ Charter Section */}
         <section className="relative py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-gradient-to-b from-[#1a1d24] via-[#0E1116] to-[#1a1d24]">
           {/* Section Separator - Top Gold Line */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent"></div>
@@ -75,15 +75,15 @@ export default function CharterGuidePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="space-y-6">
                 <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
-                  BBJ Charter
+                  ACJ Charter
                 </span>
-                <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+                <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                   <span className="text-[#F5F5F5]">What Is a </span>
-                  <span className="text-[#C9A24D] italic">BBJ Charter?</span>
+                  <span className="text-[#C9A24D] italic">ACJ Charter?</span>
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mb-8"></div>
                 <p className="text-lg text-white/70 leading-relaxed font-libre-baskerville">
-                  A BBJ charter involves hiring a privately configured Boeing Business Jet for exclusive use on a specific trip or series of flights. BBJs are especially suitable for:
+                  A ACJ charter involves hiring a privately configured Airbus Corporate Jet for exclusive use on a specific trip or series of flights. ACJs are especially suitable for:
                 </p>
                 
                 <div className="space-y-4">
@@ -129,7 +129,7 @@ export default function CharterGuidePage() {
               <div className="relative">
                 <Image
                   src="/iMAGES/AERIA-777-Concept-Interior-1.jpg"
-                  alt="BBJ Interior"
+                  alt="ACJ Interior"
                   width={600}
                   height={700}
                   className="w-full h-auto object-cover shadow-xl"
@@ -140,31 +140,31 @@ export default function CharterGuidePage() {
           </div>
         </section>
 
-        {/* Why Charter a BBJ Section */}
+        {/* Why Charter a ACJ Section */}
         <section className="relative py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-gradient-to-b from-[#1a1d24] via-[#0E1116] to-[#1a1d24]">
           {/* Section Separator - Top Gold Line */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent"></div>
           <div className="max-w-7xl mx-auto">
             <div className="mb-12 text-center">
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
-                Why BBJ
+                Why ACJ
               </span>
-              <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                 <span className="text-[#F5F5F5]">Why Charter a </span>
-                <span className="text-[#C9A24D] italic">BBJ</span>
+                <span className="text-[#C9A24D] italic">ACJ</span>
               </h2>
               <p className="text-xl sm:text-2xl md:text-3xl font-libre-baskerville font-light text-white/70 mt-2 mb-6">
                 Instead of a Traditional Private Jet
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               <p className="text-white/70 max-w-3xl mx-auto font-libre-baskerville">
-                Chartering a Boeing Business Jet (BBJ) offers a level of space, comfort, and long-range performance unmatched by any traditional private jet. With multi-zone interiors, true bedrooms, dining rooms, showers, and up to 10,000+ nautical miles of range, BBJs are designed for missions where privacy, productivity, and comfort matter most.
+                Chartering a Airbus Corporate Jet (ACJ) offers a level of space, comfort, and long-range performance unmatched by any traditional private jet. With multi-zone interiors, true bedrooms, dining rooms, showers, and up to 10,000+ nautical miles of range, ACJs are designed for missions where privacy, productivity, and comfort matter most.
               </p>
             </div>
 
             <div className="mb-12">
               <h3 className="text-xl font-semibold text-[#F5F5F5] mb-6">
-                Key Benefits of Chartering a BBJ:
+                Key Benefits of Chartering a ACJ:
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -175,7 +175,7 @@ export default function CharterGuidePage() {
                   <div>
                     <h4 className="text-lg font-semibold text-[#F5F5F5] mb-2">Space</h4>
                     <p className="text-white/70 text-sm leading-relaxed">
-                      BBJs offer up to 4,000 sq ft of interior space—up to 10 times more than a long-range business jet.
+                      ACJs offer up to 4,000 sq ft of interior space—up to 10 times more than a long-range business jet.
                     </p>
                   </div>
                 </div>
@@ -187,7 +187,7 @@ export default function CharterGuidePage() {
                   <div>
                     <h4 className="text-lg font-semibold text-[#F5F5F5] mb-2">Range</h4>
                     <p className="text-white/70 text-sm leading-relaxed">
-                      BBJ 737 series: 5,500–6,200 nm. BBJ MAX series: up to 7,000 nm. BBJ 777-200LR: over 10,000 nm. BBJ 787-9: up to ~9,800 nm.
+                      ACJ 737 series: 5,500–6,200 nm. ACJ MAX series: up to 7,000 nm. ACJ 777-200LR: over 10,000 nm. ACJ 787-9: up to ~9,800 nm.
                     </p>
                   </div>
                 </div>
@@ -443,16 +443,16 @@ export default function CharterGuidePage() {
               <div className="cost-grid">
                 <div className="cost-col">
                   <div className="cost-header">
-                    <h2 className="cost-title">How Much Does It Cost to Charter a BBJ?</h2>
+                    <h2 className="cost-title luxury-heading font-playfair-display">How Much Does It Cost to Charter an ACJ?</h2>
                     <p className="cost-description">
-                      <span className="cost-description-line">BBJ charter pricing varies based on aircraft model, configuration, routing, and mission requirements. Below are typical hourly rates for different BBJ categories.</span>
+                      <span className="cost-description-line">ACJ charter pricing varies based on aircraft model, configuration, routing, and mission requirements. Below are typical hourly rates for different ACJ categories.</span>
                     </p>
                   </div>
 
                   <div className="pricing-list">
                     <div className="pricing-item">
                       <div className="pricing-item-label">
-                        Narrowbody BBJs
+                        Narrowbody ACJs
                         <div className="pricing-item-subtitle">737 / MAX series</div>
                       </div>
                       <div className="pricing-item-value">
@@ -463,7 +463,7 @@ export default function CharterGuidePage() {
 
                     <div className="pricing-item">
                       <div className="pricing-item-label">
-                        Widebody BBJs
+                        Widebody ACJs
                         <div className="pricing-item-subtitle">777 / 787</div>
                       </div>
                       <div className="pricing-item-value">
@@ -476,7 +476,7 @@ export default function CharterGuidePage() {
                   <div className="cost-section-image">
                     <Image
                       src="/iMAGES/bbj-engine-side.jpg"
-                      alt="BBJ Aircraft"
+                      alt="ACJ Aircraft"
                       width={600}
                       height={400}
                       className="w-full h-auto"
@@ -488,8 +488,8 @@ export default function CharterGuidePage() {
                 <div className="cost-col">
                   <div className="cost-col-image">
                     <Image
-                      src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
-                      alt="BBJ Charter"
+                      src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                      alt="ACJ Charter"
                       width={600}
                       height={400}
                       className="w-full h-auto object-cover"
@@ -540,13 +540,13 @@ export default function CharterGuidePage() {
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
                 What's Included
               </span>
-              <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                 <span className="text-[#F5F5F5]">What Is Included in a </span>
-                <span className="text-[#C9A24D] italic">BBJ Charter?</span>
+                <span className="text-[#C9A24D] italic">ACJ Charter?</span>
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               <p className="text-white/70 max-w-3xl mx-auto font-libre-baskerville">
-                Every BBJ charter includes comprehensive services to ensure a seamless, luxurious experience from start to finish.
+                Every ACJ charter includes comprehensive services to ensure a seamless, luxurious experience from start to finish.
               </p>
             </div>
 
@@ -554,7 +554,7 @@ export default function CharterGuidePage() {
               <div className="relative">
                 <Image
                   src="/iMAGES/homepage-comfort.jpg"
-                  alt="BBJ Charter"
+                  alt="ACJ Charter"
                   width={600}
                   height={500}
                   className="w-full h-auto object-cover shadow-xl"
@@ -603,13 +603,13 @@ export default function CharterGuidePage() {
               <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
                 Global Reach
               </span>
-              <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
                 <span className="text-[#F5F5F5]">Popular </span>
-                <span className="text-[#C9A24D] italic">BBJ Routes</span>
+                <span className="text-[#C9A24D] italic">ACJ Routes</span>
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               <p className="text-white/70 mt-6 max-w-2xl mx-auto font-libre-baskerville">
-                These are some of the most frequently chartered routes, showcasing the BBJ's capability to connect major global destinations.
+                These are some of the most frequently chartered routes, showcasing the ACJ's capability to connect major global destinations.
               </p>
             </div>
 
@@ -681,13 +681,13 @@ export default function CharterGuidePage() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent"></div>
           <div className="max-w-7xl mx-auto">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F5F5] mb-6">
-                Charter a BBJ With Access Jet Group
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-6 font-playfair-display text-[#F5F5F5]">
+                Charter a ACJ With Access Jet Group
               </h2>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               
               <p className="text-lg text-white/70 leading-relaxed mb-8">
-                Access Jet Group provides global access to BBJ aircraft, including BBJ 737, BBJ MAX, and VIP-configured BBJ 777 and BBJ 787 models.
+                Access Jet Group provides global access to ACJ aircraft, including ACJ 737, ACJ MAX, and VIP-configured ACJ 777 and ACJ 787 models.
               </p>
 
               <p className="text-xl font-semibold text-[#F5F5F5] mb-8">
@@ -716,7 +716,7 @@ export default function CharterGuidePage() {
                   boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)"
                 }}
               >
-                Request a BBJ Charter Quote
+                Request a ACJ Charter Quote
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

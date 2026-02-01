@@ -51,9 +51,9 @@ export default function BlogListingPage() {
       {/* Hero Banner Section */}
       <section className="relative h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mb-[60px]" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1600)' }}>
         <div className="max-w-[1280px] mx-auto px-5 md:px-10 w-full text-center">
-          <h1 className="text-white text-[36px] md:text-[48px] font-bold leading-tight mb-5">BBJ Insights & Articles</h1>
+          <h1 className="text-white text-[36px] md:text-[48px] font-bold leading-tight mb-5">ACJ Insights & Articles</h1>
           <p className="text-white/90 text-base md:text-lg max-w-2xl mx-auto">
-            Your comprehensive resource for Boeing Business Jet insights, technical specifications, and industry analysis.
+            Your comprehensive resource for Airbus Corporate Jet insights, technical specifications, and industry analysis.
           </p>
         </div>
       </section>
@@ -61,22 +61,19 @@ export default function BlogListingPage() {
       <div className="max-w-[1280px] mx-auto px-5 md:px-10 pb-[100px]">
         {/* Featured Post */}
         <div className="mb-16">
-          <Link href={`/blog/${featuredPost.slug}`} className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 rounded-xl overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300">
+          <Link href={`/blog/${featuredPost.slug}`} className="block bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none">
             <div className="grid md:grid-cols-2 gap-0">
-              <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+              <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-none">
                 <Image
                   src={featuredPost.image}
                   alt={featuredPost.alt}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-400"
+                  className="object-cover group-hover:scale-105 transition-transform duration-400 rounded-none"
                 />
-                <span className="absolute top-4 left-4 bg-[#C9A24D] text-white py-1.5 px-3 rounded-md text-xs font-semibold font-instrument-sans">
-                  {featuredPost.readTime}
-                </span>
               </div>
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <div className="text-sm text-[#6B6B6B] mb-3 uppercase tracking-wider">Featured Article</div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#F5F5F5] mb-4 leading-tight">
+                <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display text-[#F5F5F5]">
                   {featuredPost.title}
                 </h2>
                 <p className="text-lg text-[#4A4A4A] mb-6 leading-relaxed">
@@ -102,25 +99,22 @@ export default function BlogListingPage() {
 
         {/* Blog Posts Grid */}
         <div className="mb-12" ref={postsSectionRef}>
-          <h2 className="text-[36px] font-bold mb-10">All Articles</h2>
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-10 font-playfair-display text-[#F5F5F5]">All Articles</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
             {currentPosts.map((post) => (
               <Link
                 key={post.id}
                 href={`/blog/${post.slug}`}
-                className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 rounded-xl overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm border border-[#C9A24D]/10 overflow-hidden cursor-pointer group hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none"
               >
-                <div className="relative w-full h-[200px] overflow-hidden">
+                <div className="relative w-full h-[200px] overflow-hidden rounded-none">
                   <Image
                     src={post.image}
                     alt={post.alt}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-400"
+                    className="object-cover group-hover:scale-105 transition-transform duration-400 rounded-none"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <span className="absolute top-3 left-3 bg-white py-1.5 px-3 rounded-md text-xs font-semibold">
-                    {post.readTime}
-                  </span>
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold text-[#F5F5F5] mb-3 leading-tight">
@@ -154,7 +148,7 @@ export default function BlogListingPage() {
             <button
               onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
               disabled={currentPage === 1}
-              className="w-10 h-10 rounded-full border-2 border-[#E0E0E0] bg-white flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:border-gray-400 transition-colors"
+              className="w-10 h-10 border-2 border-[#E0E0E0] bg-white flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:border-gray-400 transition-colors"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2">
                 <polyline points="15 18 9 12 15 6"></polyline>
@@ -166,7 +160,7 @@ export default function BlogListingPage() {
                 <button
                   key={page}
                   onClick={() => setCurrentPage(page)}
-                  className={`w-10 h-10 rounded-full border-2 flex items-center justify-center font-semibold transition-colors ${
+                  className={`w-10 h-10 border-2 flex items-center justify-center font-semibold transition-colors ${
                     currentPage === page
                       ? 'bg-[#C9A24D] text-white border-[#C9A24D]'
                       : 'bg-white text-[#F5F5F5] border-[#E0E0E0] hover:border-gray-400'
@@ -180,7 +174,7 @@ export default function BlogListingPage() {
             <button
               onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
               disabled={currentPage === totalPages}
-              className="w-10 h-10 rounded-full border-2 border-[#E0E0E0] bg-white flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:border-gray-400 transition-colors"
+              className="w-10 h-10 border-2 border-[#E0E0E0] bg-white flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed hover:border-gray-400 transition-colors"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2">
                 <polyline points="9 18 15 12 9 6"></polyline>

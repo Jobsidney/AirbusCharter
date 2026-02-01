@@ -3,7 +3,7 @@
 import { use, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Check, Plane, Shield, DollarSign, Settings, Users, ArrowUpRight, Sparkles, X, ZoomIn } from "lucide-react";
+import { ChevronRight, ChevronLeft, Check, Plane, Shield, DollarSign, Settings, Users, ArrowUpRight, Sparkles, X, ZoomIn } from "lucide-react";
 import { FooterSection } from "@/components/footer-section";
 
 // Aircraft data - can be moved to a separate file later
@@ -58,9 +58,9 @@ const aircraftData: Record<string, {
   }[];
 }> = {
   "bbj-737": {
-    name: "BBJ 737",
+    name: "ACJ 737",
     tagline: "The Original VIP Narrowbody Jet",
-    description: "The BBJ 737 revolutionized executive aviation as the original VIP narrowbody jet. Combining the proven reliability of the world's most popular commercial aircraft with bespoke luxury interiors, the BBJ 737 offers unmatched versatility for discerning travelers who demand both performance and prestige.",
+    description: "The ACJ 737 revolutionized executive aviation as the original VIP narrowbody jet. Combining the proven reliability of the world's most popular commercial aircraft with bespoke luxury interiors, the ACJ 737 offers unmatched versatility for discerning travelers who demand both performance and prestige.",
     heroImage: "/iMAGES/Boieng Inside.jpg",
     overviewImage: "/iMAGES/BoeingMainFront.jpg",
     crewImage: "/iMAGES/1882_DIN_CAM02_Final.jpg",
@@ -124,27 +124,27 @@ const aircraftData: Record<string, {
       category: "narrowbody"
     },
     gallery: [
-      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
-      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
-      { image: "/iMAGES/BBJ-Select-737-7-AFT_lounge_C_serene.jpg", title: "Aft Lounge", size: "medium" },
-      { image: "/iMAGES/BBJ-Select-737-7-Private_Room_D_earthbound.jpg", title: "Private Room", size: "small" },
-      { image: "/iMAGES/BBJ-Select-737-7-Private_Office_earthbound.jpg", title: "Private Office", size: "large" },
-      { image: "/iMAGES/BBJ-Select-737-7-Ensuite_midnight.jpg", title: "Ensuite Bathroom", size: "small" },
+      { image: "/iMAGES/ACJ-Select-737-7-FWD_lounge_A_serene.jpg", title: "Forward Lounge", size: "large" },
+      { image: "/iMAGES/ACJ-Select-737-7-Stateroom_earthbound.jpg", title: "Luxury Stateroom", size: "medium" },
+      { image: "/iMAGES/ACJ-Select-737-7-AFT_lounge_C_serene.jpg", title: "Aft Lounge", size: "medium" },
+      { image: "/iMAGES/ACJ-Select-737-7-Private_Room_D_earthbound.jpg", title: "Private Room", size: "small" },
+      { image: "/iMAGES/ACJ-Select-737-7-Private_Office_earthbound.jpg", title: "Private Office", size: "large" },
+      { image: "/iMAGES/ACJ-Select-737-7-Ensuite_midnight.jpg", title: "Ensuite Bathroom", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Entryway", size: "medium" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "large" },
-      { image: "/iMAGES/BBJ-Select-737-7-FWD_lounge_B_serene.jpg", title: "Forward Lounge B", size: "medium" },
-      { image: "/iMAGES/BBJ-Select-737-7-Stateroom_midnight.jpg", title: "Stateroom Midnight", size: "small" },
-      { image: "/iMAGES/BBJ-Select-737-7-AFT_lounge_C_earthbound.jpg", title: "Aft Lounge Earthbound", size: "large" },
+      { image: "/iMAGES/ACJ-Select-737-7-FWD_lounge_B_serene.jpg", title: "Forward Lounge B", size: "medium" },
+      { image: "/iMAGES/ACJ-Select-737-7-Stateroom_midnight.jpg", title: "Stateroom Midnight", size: "small" },
+      { image: "/iMAGES/ACJ-Select-737-7-AFT_lounge_C_earthbound.jpg", title: "Aft Lounge Earthbound", size: "large" },
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Comfort Zone", size: "medium" },
-      { image: "/iMAGES/737-tarmac.jpg", title: "BBJ 737 on Tarmac", size: "large" }
+      { image: "/iMAGES/737-tarmac.jpg", title: "ACJ 737 on Tarmac", size: "large" }
     ]
   },
   "bbj-747": {
-    name: "BBJ 747",
+    name: "ACJ 747",
     tagline: "The Ultimate Flying Palace",
-    description: "The BBJ 747-8 represents the pinnacle of private aviation luxury. With its iconic silhouette and unprecedented cabin space, this widebody masterpiece offers up to 4,786 square feet of customizable interior, making it the ultimate choice for heads of state and ultra-high-net-worth individuals.",
+    description: "The ACJ 747-8 represents the pinnacle of private aviation luxury. With its iconic silhouette and unprecedented cabin space, this widebody masterpiece offers up to 4,786 square feet of customizable interior, making it the ultimate choice for heads of state and ultra-high-net-worth individuals.",
     heroImage: "/iMAGES/Boieng Inside.jpg",
     overviewImage: "/iMAGES/BoeingMainFront.jpg",
     crewImage: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg",
@@ -221,13 +221,13 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Private Study", size: "medium" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Relaxation Area", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Spacious Foyer", size: "medium" },
-      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "BBJ 747 Exterior", size: "large" }
+      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "ACJ 747 Exterior", size: "large" }
     ]
   },
   "bbj-777": {
-    name: "BBJ 777",
+    name: "ACJ 777",
     tagline: "Long-Range Luxury Redefined",
-    description: "The BBJ 777X delivers extraordinary range and cabin space in a twin-engine widebody configuration. With the ability to fly non-stop to virtually any destination on Earth, this aircraft combines Boeing's most advanced technology with limitless interior possibilities.",
+    description: "The ACJ 777X delivers extraordinary range and cabin space in a twin-engine widebody configuration. With the ability to fly non-stop to virtually any destination on Earth, this aircraft combines Airbus's most advanced technology with limitless interior possibilities.",
     heroImage: "/iMAGES/Boieng Inside.jpg",
     overviewImage: "/iMAGES/BoeingMainFront.jpg",
     crewImage: "/iMAGES/32-2200_ENTRY.jpg",
@@ -292,10 +292,10 @@ const aircraftData: Record<string, {
     },
     gallery: [
       { image: "/iMAGES/AERIA-777-Concept-Interior-1.jpg", title: "777X Concept Interior", size: "large" },
-      { image: "/iMAGES/777x-tarmac.jpg", title: "BBJ 777X on Tarmac", size: "large" },
+      { image: "/iMAGES/777x-tarmac.jpg", title: "ACJ 777X on Tarmac", size: "large" },
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Conference Room", size: "medium" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Dining Area", size: "medium" },
-      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "GE9X Engine", size: "small" },
+      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "GE9X Engine", size: "small" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "medium" },
       { image: "/iMAGES/bbj-engine-side.jpg", title: "Engine Detail", size: "large" },
@@ -305,13 +305,13 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Executive Conference", size: "medium" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Private Study", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Spacious Foyer", size: "medium" },
-      { image: "/iMAGES/777x-tarmac.jpg", title: "BBJ 777X Profile", size: "large" }
+      { image: "/iMAGES/777x-tarmac.jpg", title: "ACJ 777X Profile", size: "large" }
     ]
   },
   "bbj-787": {
-    name: "BBJ 787",
+    name: "ACJ 787",
     tagline: "The Dreamliner Experience",
-    description: "The BBJ 787 Dreamliner brings revolutionary comfort to private aviation. With larger windows, higher cabin pressure, and advanced air filtration, passengers arrive refreshed. The composite construction enables fuel efficiency while providing a whisper-quiet cabin environment.",
+    description: "The ACJ 787 Dreamliner brings revolutionary comfort to private aviation. With larger windows, higher cabin pressure, and advanced air filtration, passengers arrive refreshed. The composite construction enables fuel efficiency while providing a whisper-quiet cabin environment.",
     heroImage: "/iMAGES/Boieng Inside.jpg",
     overviewImage: "/iMAGES/BoeingMainFront.jpg",
     crewImage: "/iMAGES/Arabian-Heritage-1.2.jpg",
@@ -383,14 +383,14 @@ const aircraftData: Record<string, {
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Executive Office", size: "large" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Grand Entryway", size: "small" },
       { image: "/iMAGES/AERIA-777-Concept-Interior-1.jpg", title: "Premium Cabin", size: "medium" },
-      { image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "Engine Technology", size: "large" },
+      { image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg", title: "Engine Technology", size: "large" },
       { image: "/iMAGES/Arabian-Heritage-1.2.jpg", title: "Luxury Suite", size: "medium" },
       { image: "/iMAGES/homepage-comfort.jpg", title: "Relaxation Space", size: "small" },
       { image: "/iMAGES/1882_DIN_CAM02_Final.jpg", title: "Formal Dining", size: "large" },
       { image: "/iMAGES/34-2200_CONFERENCE_FWD_PAUSE.jpg", title: "Executive Conference", size: "medium" },
       { image: "/iMAGES/44x25_300dpi_Office_800.jpg", title: "Private Study", size: "small" },
       { image: "/iMAGES/32-2200_ENTRY.jpg", title: "Spacious Foyer", size: "medium" },
-      { image: "/iMAGES/bbj-engine-side.jpg", title: "BBJ 787 Exterior", size: "large" }
+      { image: "/iMAGES/bbj-engine-side.jpg", title: "ACJ 787 Exterior", size: "large" }
     ]
   }
 };
@@ -424,7 +424,7 @@ function PerformanceCarousel({ aircraft }: { aircraft: typeof aircraftData[keyof
     {
       title: "Engine Details",
       description: `${aircraft.technicalSpecs.engines}. Advanced powerplants delivering reliability and performance.`,
-      image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
+      image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
       selector: "Engine Details",
       specs: [
         { label: "Engines", value: aircraft.technicalSpecs.engines },
@@ -690,11 +690,11 @@ function FeatureCarousel({ aircraft }: { aircraft: typeof aircraftData[keyof typ
     {
       title: "Cost Per Hour",
       description: `Charter pricing for the ${aircraft.name}. Costs vary based on multiple factors including aircraft model, cabin configuration, distance, and operational requirements.`,
-      image: "/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
+      image: "/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg",
       selector: "Cost Per Hour",
       pricingInfo: {
         hourlyRate: aircraft.pricing.hourlyRate,
-        category: aircraft.pricing.category === "narrowbody" ? "Narrowbody BBJ" : "Widebody BBJ",
+        category: aircraft.pricing.category === "narrowbody" ? "Narrowbody ACJ" : "Widebody ACJ",
         costFactors: [
           "Aircraft model",
           "Cabin configuration",
@@ -859,6 +859,12 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
   const { slug } = use(params);
   const aircraft = aircraftData[slug];
   const [lightboxImage, setLightboxImage] = useState<{ image: string; title: string } | null>(null);
+  const [galleryIndex, setGalleryIndex] = useState(0);
+  const gallery = aircraft.gallery || [];
+  const totalGallery = gallery.length;
+  const currentGalleryItem = totalGallery > 0 ? gallery[galleryIndex % totalGallery] : null;
+  const prevIndex = totalGallery > 0 ? (galleryIndex - 1 + totalGallery) % totalGallery : 0;
+  const nextIndex = totalGallery > 0 ? (galleryIndex + 1) % totalGallery : 0;
 
   if (!aircraft) {
     return (
@@ -904,7 +910,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
           {/* Breadcrumb */}
           <div className="flex items-center justify-center gap-2 text-sm md:text-base">
             <Link href="/" className="hover:text-[#C9A24D] transition-colors">
-              Boeing
+              Home
             </Link>
             <ChevronRight className="w-4 h-4" />
             <Link href="/#aircraft" className="hover:text-[#C9A24D] transition-colors">
@@ -923,7 +929,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F5F5F5] leading-tight">
+              <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-playfair-display text-[#F5F5F5]">
                 {aircraft.tagline}
               </h2>
               
@@ -1013,7 +1019,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
               </h3>
               
               <p className="text-white/70 leading-relaxed">
-                BBJs are fully customizable luxury aircraft, offering up to 4,000 sq ft of interior space 
+                ACJs are fully customizable luxury aircraft, offering up to 4,000 sq ft of interior space 
                 depending on model. Design your perfect flying sanctuary with layouts that include:
               </p>
 
@@ -1047,7 +1053,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
           </div>
 
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F5F5F5] mb-4">
+            <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display text-[#F5F5F5]">
               How You Benefit from Our Charter Services
             </h2>
             <p className="text-white/70 max-w-3xl">
@@ -1176,7 +1182,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
               </p>
               <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
               <p className="text-white/70 max-w-3xl mx-auto">
-                Boeing Business Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
+                Airbus Corporate Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
               </p>
             </div>
           </div>
@@ -1221,7 +1227,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
                 Charter a {aircraft.name} With <span className="text-[#C9A24D] italic">Access Jet Group</span>
               </h3>
               <p className="text-white/70 max-w-3xl mx-auto leading-relaxed font-instrument-sans">
-                Access Jet Group provides global access to BBJ aircraft, including {aircraft.name}, and VIP-configured BBJ 777 and BBJ 787 models.
+                Access Jet Group provides global access to ACJ aircraft, including {aircraft.name}, and VIP-configured ACJ 777 and ACJ 787 models.
               </p>
             </div>
             <div className="max-w-4xl mx-auto">
@@ -1286,7 +1292,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
        </section>
 
       {/* Gallery Section */}
-      <section className="relative py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-gradient-to-b from-[#0E1116] via-[#1a1d24] to-[#0E1116]">
+      <section className="relative py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-16 bg-gradient-to-b from-[#0E1116] via-[#1a1d24] to-[#0E1116] overflow-x-hidden">
         {/* Section Separator - Top Gold Line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent"></div>
         <div className="max-w-7xl mx-auto">
@@ -1309,299 +1315,121 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
             </p>
           </div>
 
-          {/* Gallery Grid - Interlocking Masonry Style */}
-          <div className="grid grid-cols-12 gap-3">
-            {/* Row 1 */}
-            <div 
-              className="col-span-6 md:col-span-3 relative group overflow-hidden cursor-pointer h-[220px]"
-              onClick={() => openLightbox(aircraft.gallery[0]?.image, aircraft.gallery[0]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[0]?.image || "/iMAGES/Boieng Inside.jpg"}
-                alt={aircraft.gallery[0]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">001</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-6 md:col-span-5 relative group overflow-hidden cursor-pointer h-[220px]"
-              onClick={() => openLightbox(aircraft.gallery[1]?.image, aircraft.gallery[1]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[1]?.image || "/iMAGES/BoeingMainFront.jpg"}
-                alt={aircraft.gallery[1]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">002</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-12 md:col-span-4 md:row-span-2 relative group overflow-hidden cursor-pointer h-[220px] md:h-full"
-              onClick={() => openLightbox(aircraft.gallery[2]?.image, aircraft.gallery[2]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[2]?.image || "/iMAGES/Pilot.jpg"}
-                alt={aircraft.gallery[2]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">003</span>
-              </div>
-            </div>
+          {/* Gallery Carousel - single track, scrolls in direction of click */}
+          {totalGallery > 0 && (
+            <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden  py-10 md:py-12">
+              <div className="relative w-full h-[280px] sm:h-[340px] md:h-[400px] lg:h-[680px] overflow-hidden">
+                {/* Infinite track: [last, ...all, first] so center always has two side images */}
+                <div
+                  className="flex items-center absolute inset-y-0 left-0 transition-transform duration-700 ease-in-out"
+                  style={{
+                    height: "100%",
+                    width: `calc(${totalGallery + 2} * 60vw + ${(totalGallery + 1)} * 1.25rem)`,
+                    transform: `translateX(calc(20vw - ${galleryIndex + 1} * (60vw + 1.25rem)))`,
+                    gap: "1.25rem",
+                  }}
+                >
+                  {/* Prepend last image so at index 0 we see last on left */}
+                  <div
+                    className="relative flex-shrink-0 cursor-pointer w-[60vw] overflow-hidden transition-[height] duration-500 ease-in-out"
+                    style={{ height: "82%" }}
+                    onClick={() => openLightbox(gallery[totalGallery - 1].image, gallery[totalGallery - 1].title)}
+                  >
+                    <Image
+                      src={gallery[totalGallery - 1]?.image || "/iMAGES/Boieng Inside.jpg"}
+                      alt={gallery[totalGallery - 1]?.title || "Gallery"}
+                      fill
+                      className="object-cover"
+                      quality={90}
+                    />
+                  </div>
+                  {gallery.map((item, i) => (
+                    <div
+                      key={i}
+                      className="relative flex-shrink-0 cursor-pointer w-[60vw] overflow-hidden transition-[height] duration-500 ease-in-out"
+                      style={{
+                        height: i === galleryIndex ? "100%" : "82%",
+                      }}
+                      onClick={() => openLightbox(item.image, item.title)}
+                    >
+                      <Image
+                        src={item.image || "/iMAGES/Boieng Inside.jpg"}
+                        alt={item.title || "Gallery"}
+                        fill
+                        className="object-cover"
+                        quality={90}
+                      />
+                    </div>
+                  ))}
+                  {/* Append first image so at last index we see first on right */}
+                  <div
+                    className="relative flex-shrink-0 cursor-pointer w-[60vw] overflow-hidden transition-[height] duration-500 ease-in-out"
+                    style={{ height: "82%" }}
+                    onClick={() => openLightbox(gallery[0].image, gallery[0].title)}
+                  >
+                    <Image
+                      src={gallery[0]?.image || "/iMAGES/Boieng Inside.jpg"}
+                      alt={gallery[0]?.title || "Gallery"}
+                      fill
+                      className="object-cover"
+                      quality={90}
+                    />
+                  </div>
+                </div>
 
-            {/* Row 2 */}
-            <div 
-              className="col-span-4 md:col-span-4 relative group overflow-hidden cursor-pointer h-[180px]"
-              onClick={() => openLightbox(aircraft.gallery[3]?.image, aircraft.gallery[3]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[3]?.image || "/iMAGES/Cover_takeoff.jpg"}
-                alt={aircraft.gallery[3]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">004</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-8 md:col-span-4 relative group overflow-hidden cursor-pointer h-[180px]"
-              onClick={() => openLightbox(aircraft.gallery[4]?.image, aircraft.gallery[4]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[4]?.image || "/iMAGES/airplaneFront.jpg"}
-                alt={aircraft.gallery[4]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">005</span>
-              </div>
-            </div>
+                {/* Left dim overlay + prev button (desktop) */}
+                <div className="hidden md:block absolute left-0 top-0 bottom-0 w-[20vw] z-10 pointer-events-none">
+                  <div className="absolute inset-0 " />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setGalleryIndex(prevIndex)}
+                  className="hidden md:flex absolute left-[2vw] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full border border-[#C9A24D] bg-black/50 hover:bg-black/70 items-center justify-center transition-colors pointer-events-auto"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="w-6 h-6 text-white" strokeWidth={2} />
+                </button>
 
-            {/* Row 3 */}
-            <div 
-              className="col-span-7 md:col-span-5 relative group overflow-hidden cursor-pointer h-[250px]"
-              onClick={() => openLightbox(aircraft.gallery[5]?.image, aircraft.gallery[5]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[5]?.image || "/iMAGES/Boieng Inside.jpg"}
-                alt={aircraft.gallery[5]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">006</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-5 md:col-span-4 relative group overflow-hidden cursor-pointer h-[250px]"
-              onClick={() => openLightbox(aircraft.gallery[6]?.image, aircraft.gallery[6]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[6]?.image || "/iMAGES/BoeingMainFront.jpg"}
-                alt={aircraft.gallery[6]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">007</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-12 md:col-span-3 relative group overflow-hidden cursor-pointer h-[250px]"
-              onClick={() => openLightbox(aircraft.gallery[7]?.image, aircraft.gallery[7]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[7]?.image || "/iMAGES/Pilot.jpg"}
-                alt={aircraft.gallery[7]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">008</span>
-              </div>
-            </div>
+                {/* Right dim overlay + next button (desktop) */}
+                <div className="hidden md:block absolute right-0 top-0 bottom-0 w-[20vw] z-10 pointer-events-none">
+                  <div className="absolute inset-0 " />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setGalleryIndex(nextIndex)}
+                  className="hidden md:flex absolute right-[2vw] top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full border border-[#C9A24D] bg-black/50 hover:bg-black/70 items-center justify-center transition-colors pointer-events-auto"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="w-6 h-6 text-white" strokeWidth={2} />
+                </button>
 
-            {/* Row 4 */}
-            <div 
-              className="col-span-6 md:col-span-4 relative group overflow-hidden cursor-pointer h-[220px]"
-              onClick={() => openLightbox(aircraft.gallery[8]?.image, aircraft.gallery[8]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[8]?.image || "/iMAGES/Boieng Inside.jpg"}
-                alt={aircraft.gallery[8]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">009</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-6 md:col-span-3 relative group overflow-hidden cursor-pointer h-[220px]"
-              onClick={() => openLightbox(aircraft.gallery[9]?.image, aircraft.gallery[9]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[9]?.image || "/iMAGES/BoeingMainFront.jpg"}
-                alt={aircraft.gallery[9]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">010</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-12 md:col-span-5 md:row-span-2 relative group overflow-hidden cursor-pointer h-[220px] md:h-full"
-              onClick={() => openLightbox(aircraft.gallery[10]?.image, aircraft.gallery[10]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[10]?.image || "/iMAGES/Pilot.jpg"}
-                alt={aircraft.gallery[10]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">011</span>
-              </div>
-            </div>
+                {/* Pagination - bottom right of center zone */}
+                <div className="absolute bottom-3 right-[20vw] md:right-[20vw] text-white/90 text-sm font-light drop-shadow-md z-10">
+                  {galleryIndex + 1} / {totalGallery}
+                </div>
 
-            {/* Row 5 */}
-            <div 
-              className="col-span-4 md:col-span-3 relative group overflow-hidden cursor-pointer h-[180px]"
-              onClick={() => openLightbox(aircraft.gallery[11]?.image, aircraft.gallery[11]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[11]?.image || "/iMAGES/Cover_takeoff.jpg"}
-                alt={aircraft.gallery[11]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">012</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-8 md:col-span-4 relative group overflow-hidden cursor-pointer h-[180px]"
-              onClick={() => openLightbox(aircraft.gallery[12]?.image, aircraft.gallery[12]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[12]?.image || "/iMAGES/airplaneFront.jpg"}
-                alt={aircraft.gallery[12]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">013</span>
+                {/* Mobile arrows */}
+                <div className="md:hidden absolute inset-y-0 left-0 right-0 flex items-center justify-between px-3 pointer-events-none z-20">
+                  <button
+                    type="button"
+                    onClick={() => setGalleryIndex(prevIndex)}
+                    className="pointer-events-auto w-11 h-11 rounded-full border border-[#C9A24D] bg-black/50 flex items-center justify-center flex-shrink-0"
+                    aria-label="Previous"
+                  >
+                    <ChevronLeft className="w-5 h-5 text-white" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGalleryIndex(nextIndex)}
+                    className="pointer-events-auto w-11 h-11 rounded-full border border-[#C9A24D] bg-black/50 flex items-center justify-center flex-shrink-0"
+                    aria-label="Next"
+                  >
+                    <ChevronRight className="w-5 h-5 text-white" />
+                  </button>
+                </div>
               </div>
             </div>
-
-            {/* Row 6 */}
-            <div 
-              className="col-span-7 md:col-span-4 relative group overflow-hidden cursor-pointer h-[250px]"
-              onClick={() => openLightbox(aircraft.gallery[13]?.image, aircraft.gallery[13]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[13]?.image || "/iMAGES/Boieng Inside.jpg"}
-                alt={aircraft.gallery[13]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">014</span>
-              </div>
-            </div>
-            
-            <div 
-              className="col-span-5 md:col-span-3 relative group overflow-hidden cursor-pointer h-[250px]"
-              onClick={() => openLightbox(aircraft.gallery[14]?.image, aircraft.gallery[14]?.title)}
-            >
-              <Image
-                src={aircraft.gallery[14]?.image || "/iMAGES/BoeingMainFront.jpg"}
-                alt={aircraft.gallery[14]?.title || "Gallery"}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={90}
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              <div className="absolute bottom-3 left-3 text-white opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-xs font-medium">015</span>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
       </section>
 
@@ -1612,7 +1440,7 @@ export default function AircraftDetailPage({ params }: { params: Promise<{ slug:
           onClick={closeLightbox}
         >
           <button 
-            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
             onClick={closeLightbox}
           >
             <X className="w-6 h-6 text-white" />

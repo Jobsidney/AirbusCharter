@@ -43,6 +43,15 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@keyframes hero-scroll-dot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+.hero-scroll-dot {
+  animation: hero-scroll-dot 1.8s ease-in-out infinite;
+}
+
 :root {
   --radius: 0.625rem;
   
@@ -204,9 +213,13 @@
   padding-top: 0 !important;
 }
 
-/* Luxury Typography */
+/* Luxury Typography - all titles use Playfair */
+h1, h2, h3, h4, h5, h6,
 .luxury-heading {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-playfair), serif !important;
+}
+
+.luxury-heading {
   font-weight: 600;
   letter-spacing: -0.02em;
 }

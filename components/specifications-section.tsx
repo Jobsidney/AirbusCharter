@@ -12,7 +12,7 @@ export function SpecificationsSection() {
           <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
             Excellence Redefined
           </span>
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
             <span className="text-[#F5F5F5]">The Future of </span>
             <span className="text-[#C9A24D] italic">Aviation</span>
           </h2>
@@ -33,7 +33,7 @@ export function SpecificationsSection() {
                   </h3>
                 </div>
                 <p className="text-sm md:text-base text-white/70 leading-relaxed pl-4">
-                  BBJ aircraft are derived from Boeing's commercial platforms and modified for private, governmental, and VIP operations. Structural reinforcements and auxiliary fuel systems enable extended missions while maintaining airline-grade reliability.
+                  ACJ aircraft are derived from Airbus's commercial platforms and modified for private, governmental, and VIP operations. Structural reinforcements and auxiliary fuel systems enable extended missions while maintaining airline-grade reliability.
                 </p>
               </div>
 
@@ -45,7 +45,7 @@ export function SpecificationsSection() {
                   </h3>
                 </div>
                 <p className="text-sm md:text-base text-white/70 leading-relaxed pl-4">
-                  BBJs feature modern flight decks with advanced avionics and redundant safety architectures. These aircraft operate under the same global certification frameworks used by major airlines, ensuring proven safety and reliability.
+                  ACJs feature modern flight decks with advanced avionics and redundant safety architectures. These aircraft operate under the same global certification frameworks used by major airlines, ensuring proven safety and reliability.
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ export function SpecificationsSection() {
               <div className="relative w-full max-w-2xl">
                 <Image
                   src="/iMAGES/fd6a00e62fbc30480726c9757894d7ae-removebg-preview.png"
-                  alt="Boeing Aircraft Top View"
+                  alt="ACJ Aircraft Top View"
                   width={1200}
                   height={800}
                   className="w-full h-auto object-contain"
@@ -72,7 +72,7 @@ export function SpecificationsSection() {
                   <div className="w-1 h-12 bg-gradient-to-b from-[#C9A24D] to-[#9C8240]"></div>
                 </div>
                 <p className="text-sm md:text-base text-white/70 leading-relaxed lg:pl-4 pr-4 lg:pr-0">
-                  BBJs offer significantly larger cabin volumes than purpose-built business jets, enabling flexible multi-zone layouts with private suites, conference areas, lounges, and dedicated crew spaces tailored to mission requirements.
+                  ACJs offer significantly larger cabin volumes than purpose-built business jets, enabling flexible multi-zone layouts with private suites, conference areas, lounges, and dedicated crew spaces tailored to mission requirements.
                 </p>
               </div>
 
@@ -84,7 +84,7 @@ export function SpecificationsSection() {
                   <div className="w-1 h-12 bg-gradient-to-b from-[#C9A24D] to-[#9C8240]"></div>
                 </div>
                 <p className="text-sm md:text-base text-white/70 leading-relaxed lg:pl-4 pr-4 lg:pr-0">
-                  BBJs are designed for long-range and ultra-long-range operations, supporting nonstop intercontinental routing. Ideal for corporate travel, government transport, charter operations, and special-mission profiles.
+                  ACJs are designed for long-range and ultra-long-range operations, supporting nonstop intercontinental routing. Ideal for corporate travel, government transport, charter operations, and special-mission profiles.
                 </p>
               </div>
             </div>

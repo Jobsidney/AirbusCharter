@@ -30,7 +30,7 @@ export default function AboutPage() {
         {/* Breadcrumb */}
         <div className="flex items-center justify-center gap-2 text-sm md:text-base">
           <Link href="/" className="hover:text-[#C9A24D] transition-colors">
-            Boeing
+            Home
           </Link>
           <ChevronRight className="w-4 h-4" />
           <span className="text-white/80">About Us</span>
@@ -1254,7 +1254,7 @@ export default function AboutPage() {
             </h6>
 
             <p className="about-description">
-              BoeingBusinessJet.com was created as a comprehensive, independent resource dedicated to Boeing Business Jet (BBJ) aircraft. Our purpose is to provide aviation professionals, operators, analysts, charter clients, and enthusiasts with clear, structured, and accessible information about the full BBJ family—from the original 737-based BBJs to the widebody BBJ 777 and BBJ 787 platforms.
+              AirbusCharterJet.com was created as a comprehensive, independent resource dedicated to Airbus Corporate Jet (ACJ) aircraft. Our purpose is to provide aviation professionals, operators, analysts, charter clients, and enthusiasts with clear, structured, and accessible information about the full ACJ family—from the original 737-based ACJs to the widebody ACJ 777 and ACJ 787 platforms.
               <br /><br />
               We focus exclusively on delivering accurate, high-quality reference material including technical specifications, performance data, interior configurations, operating costs, charter insights, and industry analysis.
             </p>
@@ -1270,10 +1270,10 @@ export default function AboutPage() {
           <ul className="about-features">
             <li className="about-feature">
               <span className="about-feature-icon">✓</span>
-              Detailed BBJ Aircraft Profiles
+              Detailed ACJ Aircraft Profiles
               <br />
               <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Full technical breakdowns of all BBJ models, including range, cabin dimensions, MTOW, engines, and mission capabilities.
+                Full technical breakdowns of all ACJ models, including range, cabin dimensions, MTOW, engines, and mission capabilities.
               </span>
             </li>
             <li className="about-feature">
@@ -1297,7 +1297,7 @@ export default function AboutPage() {
               Charter Guidance
               <br />
               <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                Practical insights for travelers, corporations, and government delegations looking to understand how BBJs are used for ultra-long-range travel.
+                Practical insights for travelers, corporations, and government delegations looking to understand how ACJs are used for ultra-long-range travel.
               </span>
             </li>
             <li className="about-feature">
@@ -1305,7 +1305,7 @@ export default function AboutPage() {
               Insights & Industry Articles
               <br />
               <span style={{ fontSize: '13px', fontWeight: '400', lineHeight: '20px', display: 'block', marginTop: '6px' }}>
-                A growing collection of technical articles, comparisons, engineering explainers, and BBJ market commentary.
+                A growing collection of technical articles, comparisons, engineering explainers, and ACJ market commentary.
               </span>
             </li>
           </ul>
@@ -1331,7 +1331,7 @@ export default function AboutPage() {
                   </h3>
 
                   <p className="features-description">
-                    <span className="features-description-line">A growing collection of technical articles, comparisons, engineering explainers, and BBJ market commentary.</span>
+                    <span className="features-description-line">A growing collection of technical articles, comparisons, engineering explainers, and ACJ market commentary.</span>
                   </p>
                 </div>
 
@@ -1373,7 +1373,7 @@ export default function AboutPage() {
                     boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)"
                   }}
                 >
-                  Charter a BBJ
+                  Charter a ACJ
                 </Link>
               </div>
             </div>
@@ -1391,7 +1391,7 @@ export default function AboutPage() {
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-[#F5F5F5] mb-4">Independence & Transparency</h3>
               <p className="text-white/70 text-base leading-relaxed mb-4">
-                This website does not represent Boeing, Boeing Business Jets, or any aircraft manufacturer.
+                This website does not represent Boeing, Airbus Corporate Jets, or any aircraft manufacturer.
               </p>
               <p className="text-white/70 text-base leading-relaxed">
                 It exists solely to organize and present publicly available information in a structured, useful format for educational and reference purposes.
@@ -1402,11 +1402,11 @@ export default function AboutPage() {
             <div className="p-6 bg-white/5 backdrop-blur-sm border border-[#C9A24D]/20">
               <h4 className="text-lg font-semibold text-[#F5F5F5] mb-4">Official Disclaimer (Full Legal Statement)</h4>
               <p className="text-sm text-white/80 font-semibold mb-4">
-                <span className="text-[#C9A24D]">⚠</span> This is an independent informational resource and is not affiliated with Boeing Business Jets.
+                <span className="text-[#C9A24D]">⚠</span> This is an independent informational resource and is not affiliated with Airbus Corporate Jets.
               </p>
               <p className="text-xs text-white/60 leading-relaxed mb-4">
-                <strong>Disclaimer:</strong> BoeingBusinessJet.com is an independent informational resource and is not affiliated with, 
-                endorsed by, or sponsored by The Boeing Company or Boeing Business Jets.
+                <strong>Disclaimer:</strong> AirbusCharterJet.com is an independent informational resource and is not affiliated with, 
+                endorsed by, or sponsored by The Boeing Company or Airbus Corporate Jets.
               </p>
               <p className="text-xs text-white/60 leading-relaxed mb-4">
                 All trademarks and product names are property of their respective owners.

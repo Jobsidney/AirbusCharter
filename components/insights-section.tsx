@@ -20,8 +20,8 @@ export function InsightsSection() {
           <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
             Industry Insights
           </span>
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
-            <span className="text-[#F5F5F5]">BBJ Insights, News & </span>
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
+            <span className="text-[#F5F5F5]">ACJ Insights, News & </span>
             <span className="text-[#C9A24D] italic">Technical Guides</span>
           </h2>
           <p className="text-2xl sm:text-3xl md:text-4xl font-libre-baskerville font-light text-white/70 mt-2 mb-6">
@@ -29,9 +29,9 @@ export function InsightsSection() {
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
           <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed font-libre-baskerville">
-            Stay informed about Boeing Business Jet insights, technical specifications, 
+            Stay informed about Airbus Corporate Jet insights, technical specifications, 
             operational guides, and industry analysis. Your trusted source for the latest developments 
-            in business aviation and BBJ fleet management.
+            in business aviation and ACJ fleet management.
           </p>
         </div>
 
@@ -41,20 +41,17 @@ export function InsightsSection() {
             <Link
               key={post.id}
               href={`/blog/${post.slug}`}
-              className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden cursor-pointer group border border-[#C9A24D]/10 hover:border-[#C9A24D]/30 transition-all duration-300"
+              className="bg-white/5 backdrop-blur-sm overflow-hidden cursor-pointer group border border-[#C9A24D]/10 hover:border-[#C9A24D]/30 transition-all duration-300 rounded-none"
             >
               {/* Image Wrapper */}
-              <div className="relative w-full h-[200px] overflow-hidden">
+              <div className="relative w-full h-[200px] overflow-hidden rounded-none">
                 <Image
                   src={post.image}
                   alt={post.alt}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-400"
+                  className="object-cover group-hover:scale-105 transition-transform duration-400 rounded-none"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                <span className="absolute top-3 left-3 bg-[#C9A24D] text-white py-1.5 px-3 rounded-md text-xs font-semibold font-instrument-sans">
-                  {post.readTime}
-                </span>
               </div>
 
               {/* Card Content */}

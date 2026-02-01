@@ -18,7 +18,7 @@ export function DestinationsSection() {
           <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
             Global Capability
           </span>
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
             <span className="text-[#F5F5F5]">Global Reach. </span>
             <span className="text-[#C9A24D] italic">Destinations Worldwide</span>
           </h2>
@@ -27,7 +27,7 @@ export function DestinationsSection() {
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-[#C9A24D] to-transparent mx-auto mb-8"></div>
           <p className="text-base sm:text-lg text-white/80 max-w-3xl mx-auto leading-relaxed font-libre-baskerville">
-          Boeing Business Jets are engineered for intercontinental and ultra-long-range missions, enabling nonstop connectivity between major global hubs and remote destinations alike. BBJ aircraft are selected for diplomatic, corporate, and private operations where range, reliability, and payload flexibility are critical.
+          Airbus Corporate Jets are engineered for intercontinental and ultra-long-range missions, enabling nonstop connectivity between major global hubs and remote destinations alike. ACJ aircraft are selected for diplomatic, corporate, and private operations where range, reliability, and payload flexibility are critical.
           </p>
         </div>
 

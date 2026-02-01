@@ -14,7 +14,7 @@ export function TechnicalEngineeringSection() {
           <span className="inline-block text-xs sm:text-sm font-semibold tracking-[0.3em] uppercase text-[#C9A24D] mb-6 font-instrument-sans">
           Platform Capabilities
           </span>
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4 font-playfair-display">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display">
             <span className="text-[#F5F5F5]"> Platform Capability for</span>
             <span className="text-[#C9A24D] italic">Global Charter Missions</span>
           </h2>
@@ -36,7 +36,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                Boeing Business Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
+                Airbus Corporate Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Key capability areas include:
@@ -44,7 +44,7 @@ export function TechnicalEngineeringSection() {
               <ul className="text-sm text-white/70 font-libre-baskerville space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-[#C9A24D] mt-1">•</span>
-                  <span><strong>Range Capability</strong> — Indicative nonstop range by BBJ model and configuration</span>
+                  <span><strong>Range Capability</strong> — Indicative nonstop range by ACJ model and configuration</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C9A24D] mt-1">•</span>
@@ -63,13 +63,13 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                Explore BBJ Specifications →
+                Explore ACJ Specifications →
               </Link>
             </div>
             <div className="shadow-xl">
               <Image
                 src="/iMAGES/bbj-engine-side.jpg"
-                alt="Boeing Business Jet Performance"
+                alt="Airbus Corporate Jet Performance"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -83,7 +83,7 @@ export function TechnicalEngineeringSection() {
             <div className="shadow-xl">
               <Image
                 src="/iMAGES/AERIA-777-Concept-Interior-1.jpg"
-                alt="BBJ Interior Cabin"
+                alt="ACJ Interior Cabin"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -98,7 +98,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                BBJ interiors are defined by cabin scale rather than standard layouts. Compared to traditional business jets, BBJs allow multi-zone configurations designed around long-duration charter missions and onboard functionality.
+                ACJ interiors are defined by cabin scale rather than standard layouts. Compared to traditional business jets, ACJs allow multi-zone configurations designed around long-duration charter missions and onboard functionality.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Interior planning commonly supports:
@@ -133,7 +133,7 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                View BBJ Interior Concepts →
+                View ACJ Interior Concepts →
               </Link>
             </div>
           </div>
@@ -142,8 +142,8 @@ export function TechnicalEngineeringSection() {
           <div className="space-y-6">
             <div className="shadow-xl">
               <Image
-                src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
-                alt="BBJ Operating Costs"
+                src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                alt="ACJ Operating Costs"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -158,7 +158,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                Operating economics for Boeing Business Jets vary significantly based on aircraft size, configuration, mission length, and utilization. BBJ charter costs are typically assessed per mission rather than standardized hourly benchmarks.
+                Operating economics for Airbus Corporate Jets vary significantly based on aircraft size, configuration, mission length, and utilization. ACJ charter costs are typically assessed per mission rather than standardized hourly benchmarks.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Key cost considerations include:
@@ -189,7 +189,7 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                Learn About BBJ Operating Costs →
+                Learn About ACJ Operating Costs →
               </Link>
             </div>
           </div>
@@ -206,7 +206,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                Boeing Business Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
+                Airbus Corporate Jets are selected for charter missions requiring extended nonstop range, large-scale cabin environments, and consistent operational performance. Capability varies by aircraft model, configuration, and mission profile.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Key capability areas include:
@@ -214,7 +214,7 @@ export function TechnicalEngineeringSection() {
               <ul className="text-sm text-white/70 font-libre-baskerville space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-[#C9A24D] mt-1">•</span>
-                  <span><strong>Range Capability</strong> — Indicative nonstop range by BBJ model and configuration</span>
+                  <span><strong>Range Capability</strong> — Indicative nonstop range by ACJ model and configuration</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#C9A24D] mt-1">•</span>
@@ -233,7 +233,7 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                Explore BBJ Specifications →
+                Explore ACJ Specifications →
               </Link>
             </div>
           </div>
@@ -243,7 +243,7 @@ export function TechnicalEngineeringSection() {
             <div className="shadow-xl">
               <Image
                 src="/iMAGES/bbj-engine-side.jpg"
-                alt="Boeing Business Jet Performance"
+                alt="Airbus Corporate Jet Performance"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -256,7 +256,7 @@ export function TechnicalEngineeringSection() {
             <div className="shadow-xl">
               <Image
                 src="/iMAGES/AERIA-777-Concept-Interior-1.jpg"
-                alt="BBJ Interior Cabin"
+                alt="ACJ Interior Cabin"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"
@@ -274,7 +274,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                BBJ interiors are defined by cabin scale rather than standard layouts. Compared to traditional business jets, BBJs allow multi-zone configurations designed around long-duration charter missions and onboard functionality.
+                ACJ interiors are defined by cabin scale rather than standard layouts. Compared to traditional business jets, ACJs allow multi-zone configurations designed around long-duration charter missions and onboard functionality.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Interior planning commonly supports:
@@ -309,7 +309,7 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                View BBJ Interior Concepts →
+                View ACJ Interior Concepts →
               </Link>
             </div>
           </div>
@@ -327,7 +327,7 @@ export function TechnicalEngineeringSection() {
                 </span>
               </h3>
               <p className="text-sm text-white/70 font-libre-baskerville leading-relaxed">
-                Operating economics for Boeing Business Jets vary significantly based on aircraft size, configuration, mission length, and utilization. BBJ charter costs are typically assessed per mission rather than standardized hourly benchmarks.
+                Operating economics for Airbus Corporate Jets vary significantly based on aircraft size, configuration, mission length, and utilization. ACJ charter costs are typically assessed per mission rather than standardized hourly benchmarks.
               </p>
               <p className="text-xs text-white/60 font-libre-baskerville leading-relaxed mb-3">
                 Key cost considerations include:
@@ -358,15 +358,15 @@ export function TechnicalEngineeringSection() {
                 href="#" 
                 className="inline-block text-xs font-semibold uppercase tracking-wider text-[#F5F5F5] hover:text-[#C9A24D] transition-colors border-b border-[#C9A24D] pb-1"
               >
-                Learn About BBJ Operating Costs →
+                Learn About ACJ Operating Costs →
               </Link>
             </div>
           </div>
           <div className="w-1/2">
             <div className="shadow-xl">
               <Image
-                src="/iMAGES/27-BBJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
-                alt="BBJ Operating Costs"
+                src="/iMAGES/27-ACJ_777X_Executive_Book_GE9X_engine-smaller.jpg"
+                alt="ACJ Operating Costs"
                 width={600}
                 height={400}
                 className="w-full h-auto object-cover"

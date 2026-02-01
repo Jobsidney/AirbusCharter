@@ -21,21 +21,21 @@ export function FooterSection() {
           </div>
           
           {/* Tagline */}
-          <h2 className="luxury-heading text-3xl sm:text-4xl md:text-5xl text-[#F5F5F5] mb-4 tracking-tight">
+          <h2 className="luxury-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 font-playfair-display text-[#F5F5F5]">
             Global Reach. Mission-Driven Capability.
           </h2>
           
           {/* Description */}
           <p className="text-[#F5F5F5]/60 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-            For clients who require nonstop intercontinental capability, cabin scale, and discretion, Boeing Business Jets remain the preferred platform for ultra-long-range charter missions.
+            For clients who require nonstop intercontinental capability, cabin scale, and discretion, Airbus Corporate Jets remain the preferred platform for ultra-long-range charter missions.
           </p>
           
           {/* CTA Button */}
           <Link 
             href="/aircraft/bbj-737"
-            className="inline-flex items-center gap-2 px-8 py-3 text-[#C9A24D] text-sm font-semibold rounded border border-[#C9A24D] bg-[#0E1116] transition-all duration-300 hover:-translate-y-1 hover:bg-[#C9A24D] hover:text-[#0E1116] hover:shadow-lg hover:shadow-[#C9A24D]/30"
+            className="inline-flex items-center gap-2 px-8 py-3 text-[#C9A24D] text-sm font-semibold border border-[#C9A24D] bg-[#0E1116] transition-all duration-300 hover:-translate-y-1 hover:bg-[#C9A24D] hover:text-[#0E1116] hover:shadow-lg hover:shadow-[#C9A24D]/30"
           >
-            View Available BBJ Aircraft
+            View Available ACJ Aircraft
             <Plane className="w-4 h-4" />
           </Link>
         </div>
@@ -52,14 +52,14 @@ export function FooterSection() {
             </ul>
           </div>
           
-          {/* BBJ Models Column */}
+          {/* ACJ Models Column */}
           <div>
-            <h3 className="text-[#C9A24D] text-xs uppercase tracking-wider mb-4 font-semibold">BBJ Models</h3>
+            <h3 className="text-[#C9A24D] text-xs uppercase tracking-wider mb-4 font-semibold">ACJ Models</h3>
             <ul className="space-y-3">
-              <li><Link href="/aircraft/bbj-737-max" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">BBJ 737 MAX</Link></li>
-              <li><Link href="/aircraft/bbj-787" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">BBJ 787</Link></li>
-              <li><Link href="/aircraft/bbj-777x" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">BBJ 777X</Link></li>
-              <li><Link href="/aircraft/bbj-747" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">BBJ 747</Link></li>
+              <li><Link href="/aircraft/bbj-737-max" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 737 MAX</Link></li>
+              <li><Link href="/aircraft/bbj-787" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 787</Link></li>
+              <li><Link href="/aircraft/bbj-777x" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 777X</Link></li>
+              <li><Link href="/aircraft/bbj-747" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">ACJ 747</Link></li>
             </ul>
           </div>
           
@@ -79,12 +79,12 @@ export function FooterSection() {
             <h3 className="text-[#C9A24D] text-xs uppercase tracking-wider mb-4 font-semibold">Charter Services</h3>
             <ul className="space-y-3">
               <li><a href="#" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">Charter Guide</a></li>
-              <li><a href="#" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">How to Charter a BBJ</a></li>
+              <li><a href="#" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">How to Charter a ACJ</a></li>
               <li><a href="#" className="text-[#F5F5F5]/70 text-sm hover:text-[#C9A24D] transition-colors font-light">Worldwide Routes</a></li>
               <li>
                 <a 
                   href="#" 
-                  className="inline-flex items-center gap-2 mt-2 px-4 py-2 text-[#C9A24D] text-xs font-semibold rounded border border-[#C9A24D] bg-[#0E1116] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#C9A24D] hover:text-[#0E1116]"
+                  className="inline-flex items-center gap-2 mt-2 px-4 py-2 text-[#C9A24D] text-xs font-semibold border border-[#C9A24D] bg-[#0E1116] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#C9A24D] hover:text-[#0E1116]"
                   style={{
                     boxShadow: "0 4px 15px rgba(0, 0, 0, 0.3)"
                   }}
@@ -99,10 +99,10 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-6 text-center space-y-2">
           <p className="text-[#F5F5F5]/50 text-sm font-light">
-            © 2025 BoeingBusinessJet.com — Independent Informational Resource
+            © 2025 AirbusCharterJet.com — Independent Informational Resource
           </p>
           <p className="text-[#F5F5F5]/30 text-xs font-light">
-            Not affiliated with The Boeing Company or Boeing Business Jets.
+            Not affiliated with The Boeing Company or Airbus Corporate Jets.
           </p>
         </div>
       </div>
